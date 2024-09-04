@@ -31,7 +31,7 @@ export default function Header() {
         className={`fixed flex justify-center shadow-2xl translate-y-1/2 h-2/4 bg-white/200  backdrop-blur-lg text-white transform transition-transform duration-300 ease-in-out z-50 ${
             isHovered ? 'translate-x-0' : '-translate-x-full'
         } md:block hidden`}
-        style={{ width: '260px' }} // Adjust width as needed
+        style={{ width: '260px' }} 
       
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}>
@@ -74,7 +74,7 @@ export default function Header() {
 
 
       {/* Responsive Navbar for iPad or Smaller */}
-      <div className="w-full h-[65px] bg-black/20 backdrop-blur-lg text-white md:hidden absolute top-0 left-0 right-0 z-950">
+      <div className="w-full h-[65px] bg-black/20 backdrop-blur-lg text-white md:hidden absolute top-0 left-0 right-0 z-950" data-aos="fade-down">
         <div className="flex justify-between items-center px-4 py-2">
         <h1 className="text-3xl font-bold flex">
             <Image className="mr-3 rounded-md" src={"/logo.png"} width={40} height={30} alt={" "}/>

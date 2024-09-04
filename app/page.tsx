@@ -4,10 +4,13 @@
 import Head from 'next/head';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
-import Marquee from '../components/Kunden'
+import Zitat from '../components/Zitat';
+import Dienstleistungen from '../components/Dienstleistungen';
+import Marquee from '../components/Kunden';
 import Portfolio from '../components/Portfolio';
 import About from '../components/About';
 import Contact from '../components/Contact';
+import ScrollToTop from '@/components/ScrollToTop';
 import { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -30,12 +33,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main>
+      <main className='bg-black'>
         <Hero />
-        <Marquee />
-        <Portfolio />
+        <Zitat />
         <About />
+        <Dienstleistungen />
+        <Portfolio />
+        {/*
+        <Marquee />
         <Contact />
+        */}
+        <ScrollToTop />
       </main>
   </>
   );

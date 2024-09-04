@@ -2,7 +2,7 @@ export default function Contact() {
     return (
       <section id="contact" className="py-16 bg-gray-900 text-white">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-8">Contact Me</h2>
+          <h2 className="text-4xl font-bold text-center mb-8">Lass uns zusammenarbeiten</h2>
           <form className="max-w-lg mx-auto space-y-4">
             <div>
               <label htmlFor="name" className="block text-sm">Name</label>

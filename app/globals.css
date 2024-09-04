@@ -4,12 +4,21 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-#home {
+#home{
   background: linear-gradient(rgba(0,0,0,0.5),#000000),url("/hero-bg.gif");
   background-size: cover;
   background-position: center;
   height: 100dvh;
   display: grid;
+}
+
+#portfolio {
+  /* background: linear-gradient(rgba(176, 129, 0, 0.751),#000000),url("/bg-portfolio.jpg");
+  background-size: cover;
+  background-position: center;
+  display: grid; */
+  @apply bg-[#171126]
 }
