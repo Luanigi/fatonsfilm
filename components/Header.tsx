@@ -88,20 +88,20 @@ export default function Header() {
         {/* Mobile Menu */}
         <div 
           className={`${
-            isSidebarOpen ? 'translate-y-1' : '-translate-y-0'
-          } bg-white/200 backdrop-blur-lg  transition-transform duration-300 ease-in-out translate-y-[-250px] z-[-2]`}
+            isSidebarOpen ? '-translate-x-0' : 'translate-x-full'
+          }   transition-transform duration-300 ease-in-out translate-x-0 z-[-2]`}
         >
           <nav className="flex flex-col items-center space-y-4 py-4 ">
-            <Link href="#home" className='hover:bg-white/20'>
+            <Link href="#home" className='hover:bg-black/20 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/10 backdrop-blur-lg'>
               <p className="hover:text-gray-300  transition duration-300" onClick={toggleSidebar}>Home</p>
             </Link>
-            <Link href="#portfolio" className='hover:bg-white/20'>
+            <Link href="#portfolio" className='hover:bg-black/20 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/10 backdrop-blur-lg'>
               <p className="hover:text-gray-300 transition duration-300" onClick={toggleSidebar}>Portfolio</p>
             </Link>
-            <Link href="#about" className='hover:bg-white/20'>
+            <Link href="#about" className='hover:bg-black/20 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/10 backdrop-blur-lg'>
               <p className="hover:text-gray-300  transition duration-300" onClick={toggleSidebar}>About</p>
             </Link>
-            <Link href="#contact" className='hover:bg-white/20'>
+            <Link href="#contact" className='hover:bg-black/20 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/10 backdrop-blur-lg'>
               <p className="hover:text-gray-300 transition duration-300" onClick={toggleSidebar}>Contact</p>
             </Link>
           </nav>

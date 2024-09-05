@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function About() {
     return (
-      <section id="about" className="py-16 bg-[#93762b] h-screen grid  text-white">
-        <div className="container mx-auto flex flex-col md:flex-row items-center">
-          <div className="md:w-1/4">
+      <section id="about" className="py-40 md:py-16 bg-[#000b21] h-screen grid  text-white">
+        <div className="container mx-auto flex flex-col md:flex-row items-center px-5 md:px-0">
+          <div className="md:w-1/4 w-3/4">
             <Image className="w-full h-auto rounded-lg shadow-2xl" src={"/Faton.jpg"} width={900} height={900} alt={" "} data-aos="fade-up"/>   
           </div>
 
