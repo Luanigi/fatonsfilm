@@ -38,7 +38,7 @@ export default function Home() {
         <Zitat />
         <About />
         <Dienstleistungen />
-        <Portfolio />
+        {/* <Portfolio /> */}
         {/*
         <Marquee />
         <Contact />

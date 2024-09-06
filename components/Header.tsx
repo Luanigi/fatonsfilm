@@ -37,7 +37,7 @@ export default function Header() {
         onMouseLeave={handleMouseLeave}>
         <nav className="flex flex-col h-full justify-center">
         <h1 className="text-3xl font-bold flex">
-            <Image className="mr-3 rounded-md ml-3 mb-4" src={"/logo.png"} width={40} height={30} alt={" "}/>
+            <Image className="mr-3 rounded-md ml-3 mb-4" src={"/logo.jpg"} width={40} height={30} alt={" "}/>
             Faton.ca
         </h1>
           <Link href="#home">
@@ -88,7 +88,7 @@ export default function Header() {
         {/* Mobile Menu */}
         <div 
           className={`${
-            isSidebarOpen ? '-translate-x-0' : 'translate-x-full'
+            isSidebarOpen ? 'scale-100' : 'scale-0'
           }   transition-transform duration-300 ease-in-out translate-x-0 z-[-2]`}
         >
           <nav className="flex flex-col items-center space-y-4 py-4 ">
