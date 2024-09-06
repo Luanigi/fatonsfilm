@@ -37,7 +37,7 @@ export default function Header() {
         onMouseLeave={handleMouseLeave}>
         <nav className="flex flex-col h-full justify-center">
         <h1 className="text-3xl font-bold flex">
-            <Image className="mr-3 rounded-md ml-3 mb-4" src={"/logo.jpg"} width={40} height={30} alt={" "}/>
+            <Image className="mr-3 rounded-md ml-3 mb-4" src={"/Logo.jpg"} width={40} height={30} alt={" "}/>
             Faton.ca
         </h1>
           <Link href="#home">
