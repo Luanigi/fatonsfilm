@@ -77,7 +77,7 @@ export default function Header() {
       <div className="w-full h-[65px] bg-black/20 backdrop-blur-lg text-white md:hidden absolute top-0 left-0 right-0 z-950" data-aos="fade-down">
         <div className="flex justify-between items-center px-4 py-2">
         <h1 className="text-3xl font-bold flex">
-            <Image className="mr-3 rounded-md" src={"/logo.png"} width={40} height={30} alt={" "}/>
+            <Image className="mr-3 rounded-md" src={"/Logo.jpg"} width={40} height={30} alt={" "}/>
             Faton.ca
         </h1>
           <button onClick={toggleSidebar} className="text-2xl">

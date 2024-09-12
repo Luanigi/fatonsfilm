@@ -12,7 +12,7 @@ body {
 }
 
 #home{
-  background: linear-gradient(rgba(0,0,0,0.5),#000000),url("/hero-bg.gif");
+  background: linear-gradient(rgba(0,0,0,0.5),#000000),url("/was.gif");
   background-size: cover;
   background-position: center;
   height: 100dvh;
@@ -22,4 +22,13 @@ body {
 .dienstbg{
   background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(0,11,33,1) 100%);
+}
+
+.ss {
+  background: rgb(205,149,86), url("/hero-bg.gif");
+  background: radial-gradient(circle, rgba(205,149,86,1) 0%, rgba(49,41,33,1) 79%, rgba(16,8,16,1) 100%);
+} 
+
+.zitat {
+  background: linear-gradient( rgba(0,0, 0, 0.9),#000b21);
 }

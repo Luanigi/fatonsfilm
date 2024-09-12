@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function Zitat() {
   return (
+    <div className="zitat">
     <div className='lg:w-1/3 md:w-2/3 w-5/6 h-[40dvh] mx-auto  text-white text-center mt-40 flex flex-col' data-aos="fade-up">
         <hr data-aos="fade-in"/>
         <h3 className='mt-4 text-4xl tracking-widest' data-aos="fade-right">Kind Words</h3>
@@ -12,6 +13,7 @@ export default function Zitat() {
             Aperiam harum rerum qui!      
         </p>
         <h1 className='ml-auto mt-2 font-cursive' data-aos="fade-up-left">/ / / Faton cekaj</h1>
+    </div>
     </div>
   )
 }

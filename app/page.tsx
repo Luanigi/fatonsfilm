@@ -6,8 +6,8 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Zitat from '../components/Zitat';
 import Dienstleistungen from '../components/Dienstleistungen';
-import Marquee from '../components/Kunden';
 import Portfolio from '../components/Portfolio';
+import Kunden from '../components/Kunden';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import ScrollToTop from '@/components/ScrollToTop';
@@ -38,7 +38,8 @@ export default function Home() {
         <Zitat />
         <About />
         <Dienstleistungen />
-        {/* <Portfolio /> */}
+        <Portfolio />
+        <Kunden />
         {/*
         <Marquee />
         <Contact />
