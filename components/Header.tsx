@@ -28,7 +28,7 @@ export default function Header() {
     <>
       {/* Sidebar for Desktop */}
       <div 
-        className={`fixed flex justify-center shadow-2xl translate-y-1/2 h-2/4 bg-white/200  backdrop-blur-lg text-white transform transition-transform duration-300 ease-in-out z-50 ${
+        className={`fixed flex justify-center shadow-2xl translate-y-1/2 h-2/4 bg-white/200 backdrop-blur-lg text-white transform transition-transform duration-300 ease-in-out z-50 ${
             isHovered ? 'translate-x-0' : '-translate-x-full'
         } md:block hidden`}
         style={{ width: '260px' }} 
@@ -56,11 +56,11 @@ export default function Header() {
       </div>
 
       {/* Button to toggle Sidebar */}
-      <div className="bg-#324432 fixed top-1/2 transform -translate-y-1/2"             
+      <div className="fixed top-1/2 transform  -translate-y-1/2"             
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
         <button
-            className={`fixed top-1/2 h-[455px] shadow-2xl text-center text-xl transform -translate-y-1/2 p-2  bg-white/200 backdrop-blur-lg text-white z-250 transition-transform duration-300 ease-in-out md:block hidden ${
+            className={`fixed top-1/2 h-[455px] shadow-2xl text-center bg-white/200 backdrop-blur-lg text-white text-xl transform -translate-y-1/2 p-2 ztop transition-transform duration-300 ease-in-out md:block hidden ${
                 isHovered ? 'translate-x-64' : 'translate-x-0'
             }`}
 
