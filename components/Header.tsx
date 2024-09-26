@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Image from 'next/image';
+import { FaInstagram, FaFacebookF, FaTiktok, FaTwitter  } from "react-icons/fa6";
 
 export default function Header() {
     const [isHovered, setIsHovered] = useState(false);
@@ -21,17 +22,14 @@ export default function Header() {
         setIsSidebarOpen(!isSidebarOpen);
     };
 
-
-  
-
   return (
     <>
       {/* Sidebar for Desktop */}
       <div 
-        className={`fixed flex justify-center shadow-2xl translate-y-1/2 h-2/4 bg-white/200 backdrop-blur-lg text-white transform transition-transform duration-300 ease-in-out z-50 ${
+        className={`fixed flex justify-center shadow-2xl translate-y-1/2 h-2/4 bg-black/10 backdrop-blur-lg text-white transform transition-transform duration-300 ease-in-out z-50 ${
             isHovered ? 'translate-x-0' : '-translate-x-full'
         } md:block hidden`}
-        style={{ width: '260px' }} 
+        style={{ width: '256px' }} 
       
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}>
@@ -52,16 +50,33 @@ export default function Header() {
           <Link href="#contact">
             <p className="py-2 px-4 hover:bg-white/20 transition duration-20">Contact</p>
           </Link>
+          <hr className='w-1/2 text-center mx-auto my-3'/>
+          <div className="grid grid-cols-4 mx-auto mt-3">
+            <Link href="#contact" className="font-bold flex">
+              <FaInstagram className="text-5xl py-2 text-[#849cc8]  hover:bg-white/20 transition duration-20 ease-in-out rounded-md" />            
+            </Link>
+            <Link href="#contact" className="font-bold flex ">
+              <FaTwitter className="text-5xl py-2 text-[#2596be] hover:bg-white/20 transition duration-20 ease-in-out rounded-md" />            
+            </Link>
+            <Link href="#contact" className="font-bold flex ">
+              <FaFacebookF className="text-5xl py-2 text-[#d4bb47]  hover:bg-white/20 transition duration-20 ease-in-out rounded-md" />            
+            </Link>
+            <Link href="#contact" className="font-bold flex ">
+              <FaTiktok className="text-5xl py-2 text-[#d87474] hover:bg-white/20 transition duration-20 ease-in-out rounded-md" />            
+            </Link>
+          </div>
         </nav>
+
+        
       </div>
 
       {/* Button to toggle Sidebar */}
-      <div className="fixed top-1/2 transform  -translate-y-1/2"             
+      <div className="fixed top-1/2 transform transition-transform z-50 -translate-y-1/2"             
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
         <button
-            className={`fixed top-1/2 h-[455px] shadow-2xl text-center bg-white/200 backdrop-blur-lg text-white text-xl transform -translate-y-1/2 p-2 ztop transition-transform duration-300 ease-in-out md:block hidden ${
-                isHovered ? 'translate-x-64' : 'translate-x-0'
+            className={`fixed top-1/2 h-[455px]  shadow-2xl text-center bg-black/10  text-white text-xl transform -translate-y-1/2 p-2 transition-transform duration-300 ease-in-out md:block hidden ${
+                isHovered ? 'translate-x-64 backdrop-blur-lg' : 'backdrop-blur-lg translate-x-0'
             }`}
 
         >

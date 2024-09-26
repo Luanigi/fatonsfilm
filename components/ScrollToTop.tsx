@@ -14,7 +14,6 @@ export default function ScrollToTop() {
     }
   };
 
-  // Scroll the page to the top
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

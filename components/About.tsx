@@ -5,7 +5,7 @@ export default function About() {
       <section id="about" className="py-40 md:py-16 bg-[#000b21] h-screen grid  text-white">
         <div className="container mx-auto flex flex-col md:flex-row items-center px-5 md:px-0">
           <div className="md:w-1/4 w-3/4">
-            <Image className="w-full h-auto rounded-lg shadow-2xl" src={"/Faton.jpg"} width={900} height={900} alt={" "} data-aos="fade-up"/>   
+            <Image className="w-full h-auto rounded-lg shadow-2xl" src={"/Faton.jpg"} layout="responsive" width={900} height={900} alt={" "} data-aos="fade-up"/>   
           </div>
 
 

@@ -40,10 +40,8 @@ export default function Home() {
         <Dienstleistungen />
         <Portfolio />
         <Kunden />
-        {/*
-        <Marquee />
         <Contact />
-        */}
+       
         <ScrollToTop />
       </main>
   </>
