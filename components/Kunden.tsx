@@ -15,44 +15,44 @@ export default function Kunden() {
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 text-white text-center mx-auto py-5 kndn">
           <div className= 'bg-black/20 rounded hover:scale-110 transition ease-in-out'>
             <Image src={"/kunden/anonym.jpg"} width={300} height={300} alt={" "} className='rounded'/>
-            Michel
+            Cola
           </div>
           
           <div className="bg-black/20 rounded hover:scale-110 transition ease-in-out">
             <Image src={"/kunden/anonym.jpg"} width={300} height={300} alt={" "} className='rounded'/>
-            Michel
+            Pepsi
           </div>
 
           <div className="bg-black/20 rounded hover:scale-110 transition ease-in-out">
             <Image src={"/kunden/anonym.jpg"} width={300} height={300} alt={" "} className='rounded'/>
-            Michel
+            Mcdonalds
           </div>
 
           <div className="bg-black/20 rounded hover:scale-110 transition ease-in-out">
             <Image src={"/kunden/anonym.jpg"} width={300} height={300} alt={" "} className='rounded'/>
-            Michel
-          </div>
-
-
-          <div className="bg-black/20 rounded hover:scale-110 transition ease-in-out">
-            <Image src={"/kunden/anonym.jpg"} width={300} height={300} alt={" "} className='rounded'/>
-            Michel
+            KFC
           </div>
 
 
           <div className="bg-black/20 rounded hover:scale-110 transition ease-in-out">
             <Image src={"/kunden/anonym.jpg"} width={300} height={300} alt={" "} className='rounded'/>
-            Michel
+            Fortnite
+          </div>
+
+
+          <div className="bg-black/20 rounded hover:scale-110 transition ease-in-out">
+            <Image src={"/kunden/anonym.jpg"} width={300} height={300} alt={" "} className='rounded'/>
+            Asus
           </div>
 
           <div className="bg-black/20 rounded hover:scale-110 transition ease-in-out">
             <Image src={"/kunden/anonym.jpg"} width={300} height={300} alt={" "} className='rounded'/>
-            Michel
+            Logitech
           </div>
 
           <div className="bg-black/20 rounded hover:scale-110 transition ease-in-out">
             <Image src={"/kunden/anonym.jpg"} width={300} height={300} alt={" "} className='rounded'/>
-            Michel
+            Ryzer
           </div>
         </div>
       </div>

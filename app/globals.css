@@ -12,7 +12,7 @@ body {
 }
 
 #home{
-  background: linear-gradient(rgba(0,0,0,0.5),#000000),url("/was.gif");
+  /* background: linear-gradient(rgba(0,0,0,0.5),#000000),url("/was.gif"); */
   background-size: cover;
   background-position: center;
   height: 100dvh;

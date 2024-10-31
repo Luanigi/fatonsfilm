@@ -38,7 +38,7 @@ export default function Header() {
             <Image className="mr-3 rounded-md ml-3 mb-4" src={"/Logo.jpg"} width={40} height={30} alt={" "}/>
             Faton.ca
         </h1>
-          <Link href="#home">
+          <Link href="/#home">
             <p className="py-2 px-4 hover:bg-white/20 transition duration-20">Home</p>
           </Link>
           <Link href="#portfolio">

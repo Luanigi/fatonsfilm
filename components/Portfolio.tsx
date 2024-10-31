@@ -1,205 +1,96 @@
 import { IoIosArrowForward } from "react-icons/io";
+import { useState } from "react";
+import Image from "next/image";
+import { Play } from "lucide-react";
+
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+
+// Define the Movie interface outside the component
+interface Movie {
+  id: number;
+  title: string;
+  category: string;
+  thumbnail: string;
+  video: string;
+}
 
 export default function Portfolio() {
-    return (
-      <>
-      <section id="portfolio" className="py-16 bg-black text-white pt-[600px] md:pt-0">
-        <h1 className="text-4xl bold text-center tracking-widest md:pt-5 pt-16" data-aos="fade-up">Projekte</h1>
-        <h3 className="text-2xl bold text-center pb-16 text-[#4741bf]" data-aos="fade-up">Wir lassen unsere Projekte für uns sprechen!</h3>
-        
-        {/* Main */}
-        <div className="w-full text-center flex mb-10">
-          <iframe className="mx-auto xl:w-5/12 md:w-8/12 w-10/12 lg:h-[450px] md:h-[300px] h-[200px]" width="800" height="512" src="https://www.youtube.com/embed/tqWXHpQYxYQ" title="Why Dostoevsky would HATE Nietzsche" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+  // Use the Movie | null type for selectedMovie state
+  const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
+
+  const movies: Movie[] = [
+    { id: 1, title: "Video Titel", category: "Short Film", thumbnail: "/Faton.jpg", video: "/yurvideo.mp4" },
+    { id: 2, title: "Video Titel", category: "Documentary", thumbnail: "/Faton.jpg", video: "/yurvideo.mp4" },
+    { id: 3, title: "Video Titel", category: "Music Video", thumbnail: "/Faton.jpg", video: "/yurvideo.mp4" },
+    { id: 4, title: "Video Titel", category: "Web Series", thumbnail: "/Faton.jpg", video: "/yurvideo.mp4" },
+    { id: 5, title: "Video Titel", category: "Short Film", thumbnail: "/Faton.jpg", video: "/yurvideo.mp4" },
+    { id: 6, title: "Video Titel", category: "Corporate", thumbnail: "/Faton.jpg", video: "/yurvideo.mp4" },
+  ];
+
+  return (
+    <>
+      <section className="py-20 px-4 md:px-8 bg-gradient-to-br bg-black pt-[600px] md:pt-0" id="projekte">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12 text-white">Meine Projekte</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {movies.map((movie) => (
+              <div
+                key={movie.id}
+                className="relative group overflow-hidden rounded-xl backdrop-blur-md bg-white/10 shadow-xl transition-all duration-300 hover:scale-105 hover:bg-white/20"
+              >
+                <Image
+                  src={movie.thumbnail}
+                  alt={movie.title}
+                  width={600}
+                  height={400}
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="rounded-full bg-white/20 hover:bg-white/40 text-white"
+                    onClick={() => setSelectedMovie(movie)}
+                  >
+                    <Play className="h-6 w-6" />
+                  </Button>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-white mb-2">{movie.title}</h3>
+                  <p className="text-gray-300">{movie.category}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
-        {/* sideprojs */}
-
-        <h1 className="text-2xl bold text-center tracking-widest py-16" data-aos="fade-up">Weiteres...</h1>
-
-        <div className="h-[30dvh] md:mx-40 mx-10 grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-6 items-center justify-center">
-
-
-          <div className="relative group h-full w-full overflow-hidden rounded-3xl" data-aos="fade-right">
-              
-              {/* The image background with hover scale effect */}
-              <div
-                className="absolute inset-0 bg-[url('/hero-bg.gif')] bg-cover bg-center grid transition-transform duration-500 group-hover:scale-110"
-              ></div>
-
-              <div className="absolute inset-0 bg-black bg-opacity-80"></div>
-
-              {/* Centered text */}
-              <div className="relative z-10 flex items-center justify-center h-full">
-                <h1 className="text-white md:text-3xl  transition ease-in-out text-lg font-bold flex gap-3">
-                  Filme 
-                  <div className="pt-1">
-                    <IoIosArrowForward />  
-                  </div>
-                </h1>
-              </div>
-
-              
-          </div>
-            
-          <div className="relative group h-full w-full overflow-hidden rounded-3xl">
-              
-              {/* The image background with hover scale effect */}
-              <div
-                className="absolute inset-0 bg-[url('/testeins.gif')] bg-cover bg-center grid transition-transform duration-500 group-hover:scale-110"
-              ></div>
-
-              <div className="absolute inset-0 bg-black bg-opacity-80"></div>
-
-              {/* Centered text */}
-              <div className="relative z-10 flex items-center justify-center h-full">
-                <h1 className="text-white md:text-3xl  transition ease-in-out text-lg font-bold flex gap-3">
-                  Serien 
-                  <div className="pt-1">
-                    <IoIosArrowForward />  
-                  </div>
-                </h1>
-              </div>
-
-              
-          </div>
-
-          <div className="relative group h-full w-full overflow-hidden rounded-3xl">
-              
-              {/* The image background with hover scale effect */}
-              <div
-                className="absolute inset-0 bg-[url('/testzwei.gif')] bg-cover bg-center grid transition-transform duration-500 group-hover:scale-110"
-              ></div>
-
-              <div className="absolute inset-0 bg-black bg-opacity-80"></div>
-
-              {/* Centered text */}
-              <div className="relative z-10 flex items-center justify-center h-full">
-                <h1 className="text-white md:text-3xl  transition ease-in-out text-lg font-bold flex gap-3">
-                  Trailer 
-                  <div className="pt-1">
-                    <IoIosArrowForward />  
-                  </div>
-                </h1>
-              </div>
-
-              
-          </div>
-
-          <div className="relative group h-full w-full overflow-hidden rounded-3xl">
-              
-              {/* The image background with hover scale effect */}
-              <div
-                className="absolute inset-0 bg-[url('/testdrei.gif')] bg-cover bg-center grid transition-transform duration-500 group-hover:scale-110"
-              ></div>
-
-              <div className="absolute inset-0 bg-black bg-opacity-80"></div>
-
-              {/* Centered text */}
-              <div className="relative z-10 flex items-center justify-center h-full">
-                <h1 className="text-white md:text-3xl  transition ease-in-out text-lg font-bold flex gap-3">
-                  Hochzeit
-                  <div className="pt-1">
-                    <IoIosArrowForward />  
-                  </div>
-                </h1>
-              </div>
-
-              
-          </div>
-
-          <div className="relative group h-full w-full overflow-hidden rounded-3xl" data-aos="fade-right">
-              
-              {/* The image background with hover scale effect */}
-              <div
-                className="absolute inset-0 bg-[url('/hero-bg.gif')] bg-cover bg-center grid transition-transform duration-500 group-hover:scale-110"
-              ></div>
-
-              <div className="absolute inset-0 bg-black bg-opacity-80"></div>
-
-              {/* Centered text */}
-              <div className="relative z-10 flex items-center justify-center h-full">
-                <h1 className="text-white md:text-3xl  transition ease-in-out text-lg font-bold flex gap-3">
-                  Filme 
-                  <div className="pt-1">
-                    <IoIosArrowForward />  
-                  </div>
-                </h1>
-              </div>
-
-              
-          </div>
-            
-          <div className="relative group h-full w-full overflow-hidden rounded-3xl">
-              
-              {/* The image background with hover scale effect */}
-              <div
-                className="absolute inset-0 bg-[url('/testeins.gif')] bg-cover bg-center grid transition-transform duration-500 group-hover:scale-110"
-              ></div>
-
-              <div className="absolute inset-0 bg-black bg-opacity-80"></div>
-
-              {/* Centered text */}
-              <div className="relative z-10 flex items-center justify-center h-full">
-                <h1 className="text-white md:text-3xl  transition ease-in-out text-lg font-bold flex gap-3">
-                  Serien 
-                  <div className="pt-1">
-                    <IoIosArrowForward />  
-                  </div>
-                </h1>
-              </div>
-
-              
-          </div>
-
-          <div className="relative group h-full w-full overflow-hidden rounded-3xl">
-              
-              {/* The image background with hover scale effect */}
-              <div
-                className="absolute inset-0 bg-[url('/testzwei.gif')] bg-cover bg-center grid transition-transform duration-500 group-hover:scale-110"
-              ></div>
-
-              <div className="absolute inset-0 bg-black bg-opacity-80"></div>
-
-              {/* Centered text */}
-              <div className="relative z-10 flex items-center justify-center h-full">
-                <h1 className="text-white md:text-3xl  transition ease-in-out text-lg font-bold flex gap-3">
-                  Trailer 
-                  <div className="pt-1">
-                    <IoIosArrowForward />  
-                  </div>
-                </h1>
-              </div>
-
-              
-          </div>
-
-          <div className="relative group h-full w-full overflow-hidden rounded-3xl">
-              
-              {/* The image background with hover scale effect */}
-              <div
-                className="absolute inset-0 bg-[url('/testdrei.gif')] bg-cover bg-center grid transition-transform duration-500 group-hover:scale-110"
-              ></div>
-
-              <div className="absolute inset-0 bg-black bg-opacity-80"></div>
-
-              {/* Centered text */}
-              <div className="relative z-10 flex items-center justify-center h-full">
-                <h1 className="text-white md:text-3xl  transition ease-in-out text-lg font-bold flex gap-3">
-                  Hochzeit
-                  <div className="pt-1">
-                    <IoIosArrowForward />  
-                  </div>
-                </h1>
-              </div>
-
-              
-          </div>
-
-        </div>
-        
+        <Dialog open={selectedMovie !== null} onOpenChange={() => setSelectedMovie(null)}>
+          <DialogContent className="bg-black/10 backdrop-blur-lg text-white transform transition-transform duration-300 ease-in-out sm:max-w-[425px]">
+            <DialogHeader>
+              <DialogTitle>{selectedMovie?.title}</DialogTitle>
+              <DialogDescription>{selectedMovie?.category}</DialogDescription>
+            </DialogHeader>
+            <div className="mt-4">
+              <video
+                src={selectedMovie?.video || "/placeholder.svg"}
+                width={600}
+                height={400}
+                className="w-full h-auto rounded-lg"
+                controls
+              />
+            </div>
+          </DialogContent>
+        </Dialog>
       </section>
       <div className="ubergang h-[30vh]"></div>
-      </>
-    );
-  }
-  
+    </>
+  );
+}
