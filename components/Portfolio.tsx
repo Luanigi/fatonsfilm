@@ -37,7 +37,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <section className="py-20 px-4 md:px-8 bg-gradient-to-br bg-black pt-[600px] md:pt-0" id="projekte">
+      <section className="py-20 px-4 mt-10 md:px-8 bg-gradient-to-br bg-black pt-[600px] md:pt-0" id="projekte">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 text-white">Meine Projekte</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -45,6 +45,8 @@ export default function Portfolio() {
               <div
                 key={movie.id}
                 className="relative group overflow-hidden rounded-xl backdrop-blur-md bg-white/10 shadow-xl transition-all duration-300 hover:scale-105 hover:bg-white/20"
+                data-aos="fade-up"
+                data-aos-duration="500"
               >
                 <Image
                   src={movie.thumbnail}
@@ -73,7 +75,7 @@ export default function Portfolio() {
         </div>
 
         <Dialog open={selectedMovie !== null} onOpenChange={() => setSelectedMovie(null)}>
-          <DialogContent className="bg-black/10 backdrop-blur-lg text-white transform transition-transform duration-300 ease-in-out sm:max-w-[425px]">
+          <DialogContent className="bg-black/10 backdrop-blur-lg text-white transform transition-transform duration-300 ease-in-out sm:max-w-[425px] w-5/6 rounded-lg">
             <DialogHeader>
               <DialogTitle>{selectedMovie?.title}</DialogTitle>
               <DialogDescription>{selectedMovie?.category}</DialogDescription>
