@@ -22,7 +22,7 @@ export default function Kunden() {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-[#001b51] to-[#000b21] pt-20">
+    <div id="kunden" className="bg-gradient-to-b from-[#001b51] from-10% to-[#000] to-60% pt-20">
       <div className="text-[#1c4c74] text-center px-2 text-xl font-extrabold uppercase rounded-md mb-5" data-aos="fade-up-left">
             Partner
       </div>

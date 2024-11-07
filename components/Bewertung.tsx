@@ -8,35 +8,35 @@ import "swiper/css/autoplay"
 
 const testimonials = [
   {
-    name: "Karin Worgul",
+    name: "Sarah B.",
     review:
-      "Esat hat wieder sein absolutes Können gezeigt. Ich bin total zufrieden aus dem Salon gegangen. Meine Freundinnen haben mir 5 Sterne gegeben.",
+      "Ein absoluter Profi, der jeden Moment perfekt einfängt. Ich bin jedes Mal begeistert von den Ergebnissen. Freundlich und sehr kompetent!",
   },
   {
-    name: "Muzaffer Topal",
+    name: "Sophie K.",
     review:
-      "Seit 15 Jahren mein Friseur der esat. Ich kann ihn an jedem weiter empfehlen. Super nette Mitarbeiter sehr freundlich. Besonders die Aufklärung der Kunden 1a💇‍♂️ 💇‍♀️",
+      "Seit Jahren arbeite ich mit ihm zusammen, und die Qualität ist immer top! Sehr professionell und zuverlässig, kreative Ideen und super Umsetzung 🎥👍",
   },
   {
     name: "Kathrin S.",
     review:
-      "Sehr guter Damenlanghaarschnitt und Herren Kurzhaarschnitt. Geben sich viel Mühe, Geschäft ist ruhig und nicht so ein unruhiges rein raus gerenne. Faire Preise. Super",
+      "Erstklassige Videos, die Emotionen und Momente so gut einfangen! Ein sehr netter und talentierter Videograph, absolut empfehlenswert!",
   },
   {
-    name: "Rita Sohn",
+    name: "Jonas W.",
     review:
-      "Gehe schon sehr lange dort hin, nette Bedienung, freundlich, sehr sauber wird sehr auf Hygiene geachtet,fühle mich wohl dort, Preise ok komme gerne wieder",
+      "Ein Videograph, der wirklich sein Handwerk versteht. Fantastische Bildqualität, schnelle Lieferung und super freundlich. Sehr empfehlenswert!",
   },
   {
-    name: "ALEXANDRA Ida",
+    name: "Lisa M.",
     review:
-      "Super Haarschnitt. Toller Chef und super Mitarbeiterin. Beide haben den bestimmten Griff um die Haate zu schneiden, es sieht immer toll aus.",
+      "Super Zusammenarbeit! Er versteht sofort, was man möchte, und setzt es perfekt um. Sympathisch und sehr engagiert, klare Empfehlung.",
   },
 ];
 
 function Testimonials() {
   return (
-    <div id="testimonial" className="w-full h-fit py-20 relative bg-[#000b21]">
+    <div id="testimonial" className="w-full h-fit py-20 relative bg-cover bg-center">
       <div className="max-w-[1400px] w-[91%] mx-auto">
         <div className="text-center justify-center">
           <div className="text-[#1c4c74] px-2 text-xl font-extrabold uppercase rounded-md mb-5">
