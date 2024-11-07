@@ -107,16 +107,16 @@ export default function Header() {
           }   transition-transform duration-300 ease-in-out translate-x-0 z-[-2]`}
         >
           <nav className="flex flex-col items-center space-y-4 py-4 ">
-            <Link href="/" className='hover:bg-black/20 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/10 backdrop-blur-lg'>
+            <Link href="/" className='hover:bg-black/30 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/20'>
               <p className="hover:text-gray-300  transition duration-300" onClick={toggleSidebar}>Home</p>
             </Link>
-            <Link href="/#projekte" className='hover:bg-black/20 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/10 backdrop-blur-lg'>
+            <Link href="/#projekte" className='hover:bg-black/30 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/20'>
               <p className="hover:text-gray-300 transition duration-300" onClick={toggleSidebar}>Portfolio</p>
             </Link>
-            <Link href="/#about" className='hover:bg-black/20 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/10 backdrop-blur-lg'>
+            <Link href="/#about" className='hover:bg-black/30 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/20'>
               <p className="hover:text-gray-300  transition duration-300" onClick={toggleSidebar}>About</p>
             </Link>
-            <Link href="/#contact" className='hover:bg-black/20 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/10 backdrop-blur-lg'>
+            <Link href="/#contact" className='hover:bg-black/30 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/20'>
               <p className="hover:text-gray-300 transition duration-300" onClick={toggleSidebar}>Contact</p>
             </Link>
           </nav>
