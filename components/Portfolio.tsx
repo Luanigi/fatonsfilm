@@ -37,9 +37,9 @@ export default function Portfolio() {
 
   return (
     <>
-      <section className="py-20 px-4 mt-10 md:px-8 pt-[600px] md:pt-0" id="projekte">
+      <section className="py-20 px-4 md:mt-10 mt-[25rem] md:px-8 pt-[600px] md:pt-0">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-white">Meine Projekte</h2>
+          <h2 className="text-4xl font-bold text-center mb-12 text-white" id="projekte" data-aos="fade-in">Meine Projekte</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {movies.map((movie) => (
               <div

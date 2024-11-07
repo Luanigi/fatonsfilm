@@ -41,14 +41,14 @@ export default function Header() {
           <Link href="/#home">
             <p className="py-2 px-4 hover:bg-white/20 transition duration-20">Home</p>
           </Link>
-          <Link href="#portfolio">
-            <p className="py-2 px-4 hover:bg-white/20 transition duration-20">Portfolio</p>
+          <Link href="/#about">
+            <p className="py-2 px-4 hover:bg-white/20 transition duration-20">Über mich</p>
           </Link>
-          <Link href="#about">
-            <p className="py-2 px-4 hover:bg-white/20 transition duration-20">About</p>
+          <Link href="/#projekte">
+            <p className="py-2 px-4 hover:bg-white/20 transition duration-20">Projekte</p>
           </Link>
-          <Link href="#contact">
-            <p className="py-2 px-4 hover:bg-white/20 transition duration-20">Contact</p>
+          <Link href="/#contact">
+            <p className="py-2 px-4 hover:bg-white/20 transition duration-20">Kontakt</p>
           </Link>
           <hr className='w-1/2 text-center mx-auto my-3'/>
           <div className="grid grid-cols-4 mx-auto mt-3">
@@ -110,11 +110,11 @@ export default function Header() {
             <Link href="/" className='hover:bg-black/30 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/20'>
               <p className="hover:text-gray-300  transition duration-300" onClick={toggleSidebar}>Home</p>
             </Link>
-            <Link href="/#projekte" className='hover:bg-black/30 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/20'>
-              <p className="hover:text-gray-300 transition duration-300" onClick={toggleSidebar}>Portfolio</p>
-            </Link>
             <Link href="/#about" className='hover:bg-black/30 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/20'>
               <p className="hover:text-gray-300  transition duration-300" onClick={toggleSidebar}>About</p>
+            </Link>
+            <Link href="/#projekte" className='hover:bg-black/30 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/20'>
+              <p className="hover:text-gray-300 transition duration-300" onClick={toggleSidebar}>Portfolio</p>
             </Link>
             <Link href="/#contact" className='hover:bg-black/30 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/20'>
               <p className="hover:text-gray-300 transition duration-300" onClick={toggleSidebar}>Contact</p>
