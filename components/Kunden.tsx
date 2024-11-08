@@ -18,7 +18,6 @@ export default function Kunden() {
     { id: 4, img: "/kunden/kfc.png", name: "KFC", fade: "fade-up-left" },
     { id: 5, img: "/kunden/fortnite.png", name: "Fortnite", fade: "fade-up-right" },
     { id: 6, img: "/kunden/asus.jpg", name: "Asus", fade: "fade-up-left" },
-
   ];
 
   return (

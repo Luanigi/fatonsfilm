@@ -27,17 +27,17 @@ export default function Portfolio() {
   const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
 
   const movies: Movie[] = [
-    { id: 1, title: "Video Titel", category: "Short Film", thumbnail: "/Faton.jpg", video: "/yurvideo.mp4" },
-    { id: 2, title: "Video Titel", category: "Documentary", thumbnail: "/Faton.jpg", video: "/yurvideo.mp4" },
-    { id: 3, title: "Video Titel", category: "Music Video", thumbnail: "/Faton.jpg", video: "/yurvideo.mp4" },
-    { id: 4, title: "Video Titel", category: "Web Series", thumbnail: "/Faton.jpg", video: "/yurvideo.mp4" },
-    { id: 5, title: "Video Titel", category: "Short Film", thumbnail: "/Faton.jpg", video: "/yurvideo.mp4" },
-    { id: 6, title: "Video Titel", category: "Corporate", thumbnail: "/Faton.jpg", video: "/yurvideo.mp4" },
+    { id: 1, title: "Video Titel", category: "Short Film", thumbnail: "/thumbnails/thumb1.jpg", video: "/yurvideo.mp4" },
+    { id: 2, title: "Video Titel", category: "Documentary", thumbnail: "/thumbnails/thumb2.png", video: "/yurvideo.mp4" },
+    { id: 3, title: "Video Titel", category: "Music Video", thumbnail: "/thumbnails/thumb3.png", video: "/yurvideo.mp4" },
+    { id: 4, title: "Video Titel", category: "Web Series", thumbnail: "/thumbnails/thumb2.png", video: "/yurvideo.mp4" },
+    { id: 5, title: "Video Titel", category: "Short Film", thumbnail: "/thumbnails/thumb3.png", video: "/yurvideo.mp4" },
+    { id: 6, title: "Video Titel", category: "Corporate", thumbnail: "/thumbnails/thumb1.jpg", video: "/yurvideo.mp4" },
   ];
 
   return (
     <>
-      <section className="py-20 px-4 md:mt-10 mt-[20rem] md:px-8 pt-[600px] md:pt-0">
+      <section className="py-20 px-4 md:mt-10 mt-[20rem] md:px-8 pt-[600px] md:pt-0" id="prjktBck">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 text-white" id="projekte" data-aos="fade-in">Meine Projekte</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
