@@ -82,8 +82,9 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Über mich</h3>
             <p className="text-sm">
                 Ich bin ein professioneller Videofilmer mit über 10 Jahren Erfahrung im
-                Festhalten schöner Momente. Meine Leidenschaft ist es, Geschichten durch die Linse zu erzählen und
-                unvergessliche Erlebnisse für meine Kunden zu schaffen.
+                Festhalten schöner Momente. Meine Leidenschaft ist es, Geschichten durch 
+                die Linse zu erzählen und unvergessliche Erlebnisse für meine Kunden zu 
+                schaffen.
             </p>
           </div>
           <div>
