@@ -37,6 +37,18 @@ body {
   background-position: center;
 }
 
+#about {
+  background: linear-gradient(#000b21, rgba(0,0,0,0.5), #000b21),url("/bck.jpg");
+  background-position: center;
+  text-shadow: 1px 1px 2px #000b21;
+}
+
+@media only screen and (max-width: 766px) {
+  #hero-btn {
+    @apply m-auto;
+  }
+}
+
 .dienstbg{
   background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(0,11,33,1) 100%);
