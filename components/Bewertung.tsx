@@ -39,7 +39,7 @@ function Testimonials() {
     <div id="testimonial" className="w-full h-fit py-20 relative bg-cover bg-center">
       <div className="max-w-[1400px] w-[91%] mx-auto">
         <div className="text-center justify-center">
-          <div className="text-[#1c4c74] px-2 text-xl font-extrabold uppercase rounded-md mb-5">
+          <div className="text-[#1c4c74] px-2 text-xl font-extrabold uppercase rounded-md mb-5" data-aos="fade-up-left">
             Bewertungen
           </div>
           <h1 className="dark:text-white text-black text-[50px] mb-10" data-aos="fade-up">Was sagen unsere Kunden?</h1>

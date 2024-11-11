@@ -6,6 +6,9 @@ export default function Dienstleistungen() {
   return (
     <section className="dienstbg text-white pt-40 h-screen">
       <div className="container mx-auto text-center w-5/6">
+      <div className="text-[#1c4c74] text-center px-2 text-xl font-extrabold uppercase rounded-md mb-5" data-aos="fade-up-left">
+            prozess
+      </div>
         <h3 className="text-3xl md:text-4xl font-bold mb-20 tracking-wider" data-aos="fade-up">
           Die 4 Schritte zu Ihrem Erfolg
         </h3>

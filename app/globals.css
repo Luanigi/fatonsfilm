@@ -37,6 +37,12 @@ body {
   background-position: center;
 }
 
+#not-found {
+  background: linear-gradient(rgba(0,0,0,0.5),#000000),url("/hero.gif");
+  background-size: cover;
+  background-position: center;
+}
+
 #about {
   background: linear-gradient(#000b21, rgba(0,0,0,0.5), #000b21),url("/bck.jpg");
   background-position: center;

@@ -12,12 +12,12 @@ interface Kunden {
 }
 export default function Kunden() {
   const kunden: Kunden[] = [
-    { id: 1, img: "/kunden/cola.jpg", name: "Cola", fade: "fade-up-right" },
-    { id: 2, img: "/kunden/pepsi.png", name: "Pepsi", fade: "fade-up-left" },
-    { id: 3, img: "/kunden/mcs.jpeg", name: "Mcdonalds", fade: "fade-up-right" },
-    { id: 4, img: "/kunden/kfc.png", name: "KFC", fade: "fade-up-left" },
-    { id: 5, img: "/kunden/fortnite.png", name: "Fortnite", fade: "fade-up-right" },
-    { id: 6, img: "/kunden/asus.jpg", name: "Asus", fade: "fade-up-left" },
+    { id: 1, img: "/kunden/kunde.jpg", name: "Cola", fade: "fade-up-right" },
+    { id: 2, img: "/kunden/kunde.jpg", name: "Pepsi", fade: "fade-up-left" },
+    { id: 3, img: "/kunden/kunde.jpg", name: "Mcdonalds", fade: "fade-up-right" },
+    { id: 4, img: "/kunden/kunde.jpg", name: "KFC", fade: "fade-up-left" },
+    { id: 5, img: "/kunden/kunde.jpg", name: "Fortnite", fade: "fade-up-right" },
+    { id: 6, img: "/kunden/kunde.jpg", name: "Asus", fade: "fade-up-left" },
   ];
 
   return (
