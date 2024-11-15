@@ -118,7 +118,7 @@ export default function Header() {
             <Link href="/#projekte" className='hover:bg-black/30 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/20'>
               <p className="hover:text-gray-300 transition duration-300" onClick={toggleSidebar}>Portfolio</p>
             </Link>
-            <Link href="/#contact" className='hover:bg-black/30 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/20'>
+            <Link href="/#contact" className='hover:bg-black/30 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/20 mb-30'>
               <p className="hover:text-gray-300 transition duration-300" onClick={toggleSidebar}>Contact</p>
             </Link>
           </nav>

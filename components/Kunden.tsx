@@ -12,12 +12,12 @@ interface Kunden {
 }
 export default function Kunden() {
   const kunden: Kunden[] = [
-    { id: 1, img: "/kunden/kunde.jpg", name: "Cola", fade: "fade-up-right" },
-    { id: 2, img: "/kunden/kunde.jpg", name: "Pepsi", fade: "fade-up-left" },
-    { id: 3, img: "/kunden/kunde.jpg", name: "Mcdonalds", fade: "fade-up-right" },
-    { id: 4, img: "/kunden/kunde.jpg", name: "KFC", fade: "fade-up-left" },
-    { id: 5, img: "/kunden/kunde.jpg", name: "Fortnite", fade: "fade-up-right" },
-    { id: 6, img: "/kunden/kunde.jpg", name: "Asus", fade: "fade-up-left" },
+    { id: 1, img: "/kunden/kunde.png", name: "Cola", fade: "fade-up-right" },
+    { id: 2, img: "/kunden/kunde.png", name: "Pepsi", fade: "fade-up-left" },
+    { id: 3, img: "/kunden/kunde.png", name: "Mcdonalds", fade: "fade-up-right" },
+    { id: 4, img: "/kunden/kunde.png", name: "KFC", fade: "fade-up-left" },
+    { id: 5, img: "/kunden/kunde.png", name: "Fortnite", fade: "fade-up-right" },
+    { id: 6, img: "/kunden/kunde.png", name: "Asus", fade: "fade-up-left" },
   ];
 
   return (
@@ -41,7 +41,7 @@ export default function Kunden() {
                     alt={" "}
                     width={300}
                     height={300}
-                    className="rounded hover:scale-120 transition ease-in-out bg-white"
+                    className="rounded hover:scale-120 transition ease-in-out bg-transparent"
                   />
                     {kunde.name}
                 </div>

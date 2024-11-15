@@ -27,12 +27,12 @@ export default function Portfolio() {
   const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
 
   const movies: Movie[] = [
-    { id: 1, title: "Video Titel", category: "Short Film", thumbnail: "/thumbnails/thumbnail.jpg", video: "/yurvideo.mp4" },
-    { id: 2, title: "Video Titel", category: "Documentary", thumbnail: "/thumbnails/thumbnail.jpg", video: "/yurvideo.mp4" },
-    { id: 3, title: "Video Titel", category: "Music Video", thumbnail: "/thumbnails/thumbnail.jpg", video: "/yurvideo.mp4" },
-    { id: 4, title: "Video Titel", category: "Web Series", thumbnail: "/thumbnails/thumbnail.jpg", video: "/yurvideo.mp4" },
-    { id: 5, title: "Video Titel", category: "Short Film", thumbnail: "/thumbnails/thumbnail.jpg", video: "/yurvideo.mp4" },
-    { id: 6, title: "Video Titel", category: "Corporate", thumbnail: "/thumbnails/thumbnail.jpg", video: "/yurvideo.mp4" },
+    { id: 1, title: "Video Titel", category: "Short Film", thumbnail: "/thumbnails/thumbnail.png", video: "/yurvideo.mp4" },
+    { id: 2, title: "Video Titel", category: "Documentary", thumbnail: "/thumbnails/thumbnail.png", video: "/yurvideo.mp4" },
+    { id: 3, title: "Video Titel", category: "Music Video", thumbnail: "/thumbnails/thumbnail.png", video: "/yurvideo.mp4" },
+    { id: 4, title: "Video Titel", category: "Web Series", thumbnail: "/thumbnails/thumbnail.png", video: "/yurvideo.mp4" },
+    { id: 5, title: "Video Titel", category: "Short Film", thumbnail: "/thumbnails/thumbnail.png", video: "/yurvideo.mp4" },
+    { id: 6, title: "Video Titel", category: "Corporate", thumbnail: "/thumbnails/thumbnail.png", video: "/yurvideo.mp4" },
   ];
 
   return (
@@ -41,13 +41,18 @@ export default function Portfolio() {
         <div className="max-w-6xl mx-auto">
         <div className="text-[#1c4c74] text-center px-2 text-xl font-extrabold uppercase rounded-md mb-5" data-aos="fade-up-left">
             Produkt
-      </div>
-          <h2 className="text-4xl font-bold text-center mb-12 text-white" id="projekte" data-aos="fade-in">Meine Projekte</h2>
+        </div>
+          <h2 className="text-4xl font-bold text-center mb-12 text-white" id="projekte" data-aos="fade-in">
+            Meine Projekte
+          </h2>
+
+          <video src="/yurvideo.mp4" className="rounded-lg w-3/4 m-auto my-10 h-full object-cover" data-aos="fade-in" controls></video>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {movies.map((movie) => (
               <div
                 key={movie.id}
-                className="relative group overflow-hidden rounded-xl backdrop-blur-md bcktst shadow-xl transition-all duration-300 hover:scale-105 hover:bg-white/20 ease-in-out"
+                className="relative md:w-full w-10/12 m-auto group overflow-hidden rounded-xl backdrop-blur-md bg-slate-500/20 shadow-xl transition-all duration-300 ease-in-out"
                 data-aos="fade-up"
                 data-aos-duration="500"
               >
@@ -56,7 +61,7 @@ export default function Portfolio() {
                   alt={movie.title}
                   width={600}
                   height={400}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-64 object-cover hover:bg-slate-800/20"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <Button
