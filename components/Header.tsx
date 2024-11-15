@@ -108,7 +108,7 @@ export default function Header() {
             isSidebarOpen ? 'scale-100' : 'scale-0'
           }   transition-transform duration-300 ease-in-out translate-x-0 z-[-2]`}
         >
-          <nav className="flex flex-col items-center space-y-4 py-4 ">
+          <nav className="flex flex-col items-center space-y-4 py-4 mt-3 w-10/12 mx-auto rounded-lg backdrop-blur-lg bg-black/20">
             <Link href="/" className='hover:bg-black/30 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/20'>
               <p className="hover:text-gray-300  transition duration-300" onClick={toggleSidebar}>Home</p>
             </Link>
