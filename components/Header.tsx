@@ -38,7 +38,7 @@ export default function Header() {
         <nav className="flex flex-col h-full justify-center">
         <h1 className="text-3xl font-bold flex">
             <Image className="mr-3 rounded-md ml-3 mb-4" src={"/Logo.jpg"} width={40} height={30} alt={" "}/>
-            Faton.ca
+            Faton's Film
         </h1>
           <Link href="/#home">
             <p className="py-2 px-4 hover:bg-white/20 transition duration-20">Home</p>

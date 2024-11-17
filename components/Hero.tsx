@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="text-center text-white">
         <div className="mt-4 text-xl flex items-center justify-center md:justify-start gap-1" data-aos="zoom-in">
           <CiPlay1 className="text-lg mt-1 text-center" /> 
-          <p className="tracking-wider">DIRECTED BY FATON</p>
+          <p className="tracking-wider">DIRECTED BY FATON CAKAJ</p>
         </div>
         <h1 className="text-6xl font-bold md:py-0 py-5" data-aos="zoom-in">Erfolg durch Video</h1>
         <Link href="/#projekte">
