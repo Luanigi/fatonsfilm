@@ -28,7 +28,7 @@ export default function Header() {
     <>
       {/* Sidebar for Desktop */}
       <div 
-        className={`fixed flex justify-center shadow-2xl translate-y-1/2 h-2/4 bg-black/10 backdrop-blur-lg text-white transform transition-transform duration-300 ease-in-out z-50 ${
+        className={`fixed flex justify-center shadow-2xl translate-y-1/2 h-2/4 bg-black/10 backdrop-blur-lg text-white transform transition-transform duration-300 ease-in-out z-[50] ${
             isHovered ? 'translate-x-0' : '-translate-x-full'
         } md:block hidden`}
         style={{ width: '256px' }} 
@@ -91,7 +91,7 @@ export default function Header() {
 
 
       {/* Responsive Navbar for iPad or Smaller */}
-      <div className="w-full h-[65px] bg-black/20 backdrop-blur-lg text-white md:hidden absolute top-0 left-0 right-0 z-950" data-aos="fade-down">
+      <div className="w-full h-[65px] bg-black/20 backdrop-blur-lg text-white md:hidden absolute top-0 left-0 right-0 z-[950]" data-aos="fade-down">
         <div className="flex justify-between items-center px-4 py-2">
         <h1 className="text-3xl font-bold flex">
             <Image className="mr-3 rounded-md" src={"/Logo.jpg"} width={40} height={30} alt={" "}/>
@@ -106,9 +106,9 @@ export default function Header() {
         <div 
           className={`${
             isSidebarOpen ? 'scale-100' : 'scale-0'
-          }   transition-transform duration-300 ease-in-out translate-x-0 z-[99]`}
+          }   transition-transform duration-300 ease-in-out translate-x-0`}
         >
-          <nav className="flex flex-col items-center space-y-4 py-4 mt-3 shadow-2xl w-10/12 mx-auto rounded-lg backdrop-blur bg-black/20">
+          <nav className="flex flex-col backdrop-blur-lg bg-slate-900/20 items-center space-y-4 py-4 mt-3 z-[99] shadow-2xl w-10/12 mx-auto rounded-lg">
             <Link href="/" className='hover:bg-black/30 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/20'>
               <p className="hover:text-gray-300  transition duration-300" onClick={toggleSidebar}>Home</p>
             </Link>

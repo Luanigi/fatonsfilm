@@ -100,7 +100,6 @@ export default function Portfolio() {
           </DialogContent>
         </Dialog>
       </section>
-      {/* <div className="ubergang h-[30vh]"></div> */}
     </>
   );
 }

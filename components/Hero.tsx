@@ -12,7 +12,7 @@ export default function Hero() {
         </div>
         <h1 className="text-6xl font-bold md:py-0 py-5" data-aos="zoom-in">Erfolg durch Video</h1>
         <Link href="/#projekte">
-          <div data-aos="zoom-in" >
+          <div data-aos="zoom-in">
             <button
               id="hero-btn"
               className="flex md:ml-auto text-white backdrop-blur bg-black/50 hover:bg-white/10 border-2 border-white p-2.5 md:w-2/6 rounded-lg mt-4 hover:-translate-y-2 transition duration-200"
