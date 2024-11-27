@@ -10,7 +10,7 @@ export default function About() {
 
 
           <div className="md:w-1/2 md:pl-12 mt-8 md:mt-0">
-            <h2 className="text-4xl font-bold" data-aos="fade-up" data-aos-delay="300">Deine Geschichte, deine Leidenschaft</h2>
+            <h2 className="text-4xl font-bold" data-aos="fade-up" data-aos-delay="300">Faton Cakaj, Hagen📍</h2>
             <p className="mt-4 text-lg" data-aos="fade-up" data-aos-delay="500">
                 Ich bin ein professioneller Videofilmer mit über 10 Jahren Erfahrung im
                 Festhalten schöner Momente. Meine Leidenschaft ist es, Geschichten durch 

@@ -1,10 +1,11 @@
 import Link from "next/link"
 import { Facebook, Instagram, Youtube, Twitter } from "lucide-react"
+import Image from "next/image"
 
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300" id="contact">
-      <div className="max-w-6xl mx-auto px-4 py-10 md:py-16">
+      <div className="max-w-6xl mx-auto px-4 pt-10 md:pt-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-lg font-semibold mb-4">Über mich</h3>
@@ -77,6 +78,7 @@ export default function Footer() {
           <p>&copy; {new Date().getFullYear()} | Faton.ca | All rights reserved.</p>
 
         </div>
+        <Image src={"/icon2.png"} alt="Logo" width={100} height={100} className="flex m-auto opacity-40"/>
       </div>
     </footer>
   )

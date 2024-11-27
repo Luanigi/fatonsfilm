@@ -12,6 +12,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { title } from "process";
 
 // Define the Movie interface outside the component
 interface Movie {
@@ -29,7 +30,7 @@ export default function Portfolio() {
   const movies: Movie[] = [
     { id: 1, title: "Video Titel", category: "Short Film", thumbnail: "/thumbnails/thumbnail.png", video: "/yurvideo.mp4" },
     { id: 2, title: "Video Titel", category: "Documentary", thumbnail: "/thumbnails/thumbnail.png", video: "/yurvideo.mp4" },
-    { id: 3, title: "Video Titel", category: "Music Video", thumbnail: "/thumbnails/thumbnail.png", video: "/yurvideo.mp4" },
+    { id: 3, title: "Video Titel", category: "Music Video", thumbnail: "/thumbnails/musicvideo.jpg", video: "https://player.vimeo.com/video/1033914085?h=06f69e8a14&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" },
     { id: 4, title: "Video Titel", category: "Web Series", thumbnail: "/thumbnails/thumbnail.png", video: "/yurvideo.mp4" },
     { id: 5, title: "Video Titel", category: "Short Film", thumbnail: "/thumbnails/thumbnail.png", video: "/yurvideo.mp4" },
     { id: 6, title: "Video Titel", category: "Corporate", thumbnail: "/thumbnails/thumbnail.png", video: "/yurvideo.mp4" },
@@ -47,7 +48,6 @@ export default function Portfolio() {
           </h2>
 
           <video src="/yurvideo.mp4" className="rounded-lg w-3/4 m-auto my-10 h-full object-cover" data-aos="fade-in" controls></video>
-          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {movies.map((movie) => (
               <div
@@ -83,19 +83,30 @@ export default function Portfolio() {
         </div>
 
         <Dialog open={selectedMovie !== null} onOpenChange={() => setSelectedMovie(null)}>
-          <DialogContent className="bg-black/10 backdrop-blur-lg text-white transform transition-transform duration-300 ease-in-out sm:max-w-[425px] w-5/6 rounded-lg">
+          <DialogContent className="bg-black/10 backdrop-blur-lg text-white transform transition-transform duration-300 ease-in-out sm:max-w-[425px] w-10/12 rounded-lg">
             <DialogHeader>
               <DialogTitle>{selectedMovie?.title}</DialogTitle>
               <DialogDescription>{selectedMovie?.category}</DialogDescription>
             </DialogHeader>
             <div className="mt-4">
-              <video
-                src={selectedMovie?.video || "/placeholder.svg"}
+              {/* <video
+                src="https://player.vimeo.com/video/1033914085?h=06f69e8a14"
                 width={600}
                 height={400}
                 className="w-full h-auto rounded-lg"
                 controls
-              />
+              /> */}
+              
+              <div className="rounded-lg" >
+                <iframe 
+                  src={selectedMovie?.video || "/placeholder.svg"}
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+                  title={title}
+                  width={400}
+                  height={200}
+                  className="w-full h-5/5"
+                />
+              </div>
             </div>
           </DialogContent>
         </Dialog>
