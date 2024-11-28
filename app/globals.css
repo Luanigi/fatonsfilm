@@ -66,10 +66,6 @@ body {
 background: linear-gradient(90deg, rgba(132,156,200,1) 31%, rgba(212,187,71,1) 66%, rgba(216,116,116,1) 100%);  opacity: 90%;
 } 
 
-.ss::before {
-  filter: blur(100px);
-}
-
 .zitat {
   background: linear-gradient( rgba(0,0, 0, 0.9),#000b21);
 }
