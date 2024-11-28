@@ -17,6 +17,7 @@ body {
   background-position: center;
   height: 100dvh;
   display: grid;
+  z-index: -99;
 }
 
 #testimonial {
@@ -26,13 +27,13 @@ body {
 }
 
 #kunden {
-  background: linear-gradient( #000, rgba(0,0,0,0.9), #000, #000, #000),url("/kunden.png");
+  background: linear-gradient( #000, rgba(0,0,0,0.9), #000, #000, #000),url("/kunden.png"); /**/
   background-size: cover;
   background-position: center;
 }
 
 #prjktBck {
-  background: linear-gradient(#000, rgba(0,0,0,0.9), #000),url("/prjktbck.png");
+  background: linear-gradient(#000, rgba(0,0,0,0.9), #000); /*,url("/prjktbck.png")*/
   background-size: cover;
   background-position: center;
 }

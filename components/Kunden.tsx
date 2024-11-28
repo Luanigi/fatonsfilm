@@ -25,7 +25,7 @@ export default function Kunden() {
       <div className="text-[#1c4c74] text-center px-2 text-xl font-extrabold uppercase rounded-md mb-5" data-aos="fade-up-left">
             Partner
       </div>
-      <h1 className=' text-white text-4xl text-center pb-10' data-aos="fade-up-right">Unsere Kunden 🤝</h1>
+      <h1 className=' text-white text-4xl text-center pb-10' data-aos="fade-up-right">Meine Partner 🤝</h1>
       
       <div className="flex w-1/2 mx-auto">
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 text-white text-center mx-auto py-5">

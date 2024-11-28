@@ -103,22 +103,20 @@ export default function Header() {
         </div>
 
         {/* Mobile Menu */}
-        <div 
-          className={`${
+        <div className={`${
             isSidebarOpen ? 'scale-100' : 'scale-0'
-          }   transition-transform duration-300 ease-in-out translate-x-0`}
-        >
-          <nav className="flex flex-col backdrop-blur-lg bg-slate-900/20 items-center space-y-4 py-4 mt-3 z-[99] shadow-2xl w-10/12 mx-auto rounded-lg">
-            <Link href="/" className='hover:bg-black/30 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/20'>
-              <p className="hover:text-gray-300  transition duration-300" onClick={toggleSidebar}>Home</p>
+            } transition-transform duration-300 ease-in-out translate-x-0`}>
+          <nav className="flex flex-col bg-black/20 items-center space-y-4 py-4 mt-3 z-[999] shadow-2xl w-10/12 mx-auto rounded-lg">
+            <Link href="/" className='hover:bg-zinc-700/20 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg transition ease-in-out bg-zinc-900'>
+              <p className="hover:text-gray-300 transition duration-300" onClick={toggleSidebar}>Home</p>
             </Link>
-            <Link href="/#about" className='hover:bg-black/30 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/20'>
-              <p className="hover:text-gray-300  transition duration-300" onClick={toggleSidebar}>About</p>
+            <Link href="/#about" className='hover:bg-zinc-700/20 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-zinc-900 transition ease-in-out'>
+              <p className="hover:text-gray-300 transition duration-300" onClick={toggleSidebar}>About</p>
             </Link>
-            <Link href="/#projekte" className='hover:bg-black/30 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/20'>
+            <Link href="/#projekte" className='hover:bg-zinc-700/20 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-zinc-900 transition ease-in-out'>
               <p className="hover:text-gray-300 transition duration-300" onClick={toggleSidebar}>Portfolio</p>
             </Link>
-            <Link href="/#contact" className='hover:bg-black/30 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-black/20 mb-30'>
+            <Link href="/#contact" className='hover:bg-zinc-700/20 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-zinc-900 transition ease-in-out'>
               <p className="hover:text-gray-300 transition duration-300" onClick={toggleSidebar}>Contact</p>
             </Link>
           </nav>
