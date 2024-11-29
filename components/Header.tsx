@@ -2,13 +2,15 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { motion, AnimatePresence } from 'framer-motion'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Image from 'next/image';
 import { FaInstagram, FaFacebookF, FaTiktok, FaTwitter  } from "react-icons/fa6";
+import NavLinks from './nav-links'
 
 export default function Header() {
     const [isHovered, setIsHovered] = useState(false);
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
     const handleMouseEnter = () => {
         setIsHovered(true);
@@ -21,7 +23,7 @@ export default function Header() {
     
 
     const toggleSidebar = () => {
-        setIsSidebarOpen(!isSidebarOpen);
+        setIsOpen(!isOpen);
     };
 
   return (
@@ -91,37 +93,57 @@ export default function Header() {
 
 
       {/* Responsive Navbar for iPad or Smaller */}
-      <div className="w-full h-[65px] bg-black/20 backdrop-blur-lg text-white md:hidden absolute top-0 left-0 right-0 z-[950]" data-aos="fade-down">
-        <div className="flex justify-between items-center px-4 py-2">
-        <h1 className="text-3xl font-bold flex">
-            <Image className="mr-3 rounded-md" src={"/Logo.png"} width={40} height={30} alt={" "}/>
+      <nav className="w-full h-[65px] absolute top-0 left-0 right-0 z-50 md:hidden" data-aos="fade-down">
+      <div className="backdrop-blur-md bg-black/20 p-4 shadow-lg">
+        <div className="flex justify-between items-center">
+        <h1 className="text-3xl font-bold flex text-white">
+            <Image className="mr-3 rounded-md " src={"/Logo.png"} width={40} height={30} alt={" "}/>
             Faton.ca
         </h1>
-          <button onClick={toggleSidebar} className="text-2xl">
-            {isSidebarOpen ? <FaTimes /> : <FaBars />}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-gray-800 focus:outline-none focus:text-gray-500"
+          >
+            <AnimatePresence mode="wait" initial={false}>
+              {isOpen ? (
+                <motion.div
+                  key="close"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <FaTimes className="w-6 h-6 text-white" />
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="menu"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <FaBars className="w-6 h-6 text-white" />
+                </motion.div>
+              )}
+            </AnimatePresence>
           </button>
         </div>
-
-        {/* Mobile Menu */}
-        <div className={`${
-            isSidebarOpen ? 'scale-100' : 'scale-0'
-            } transition-transform duration-300 ease-in-out translate-x-0`}>
-          <nav className="flex flex-col bg-black w-full h-full justify-center items-center space-y-4 py-4 mt-3 z-[999] shadow-2xl mx-auto rounded-lg">
-            <Link href="/" className='hover:bg-zinc-700/20 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg transition ease-in-out bg-zinc-900'>
-              <p className="hover:text-gray-300 transition duration-300" onClick={toggleSidebar}>Home</p>
-            </Link>
-            <Link href="/#about" className='hover:bg-zinc-700/20 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-zinc-900 transition ease-in-out'>
-              <p className="hover:text-gray-300 transition duration-300" onClick={toggleSidebar}>About</p>
-            </Link>
-            <Link href="/#projekte" className='hover:bg-zinc-700/20 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-zinc-900 transition ease-in-out'>
-              <p className="hover:text-gray-300 transition duration-300" onClick={toggleSidebar}>Portfolio</p>
-            </Link>
-            <Link href="/#contact" className='hover:bg-zinc-700/20 w-5/6 text-center p-3 drop-shadow-2xl rounded-lg bg-zinc-900 transition ease-in-out'>
-              <p className="hover:text-gray-300 transition duration-300" onClick={toggleSidebar}>Contact</p>
-            </Link>
-          </nav>
-        </div>
       </div>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="backdrop-blur-md bg-black/20 shadow-lg"
+          >
+            <NavLinks />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </nav>
     </>
   );
 }
