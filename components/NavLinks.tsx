@@ -1,10 +1,19 @@
 import { motion } from 'framer-motion'
+import Link from 'next/link'
+import { FaInstagram, FaFacebookF, FaTiktok, FaTwitter  } from "react-icons/fa6";
 
 const links = [
   { name: 'home', href: '/' },
   { name: 'about', href: '/#about' },
   { name: 'portfolio', href: '/#projekte' },
   { name: 'contact', href: '/#contact' },
+]
+
+const socialLinks = [
+  { name: 'Instagram', icon: FaInstagram, color: 'text-[#849cc8]', href: '#' },
+  { name: 'Twitter', icon: FaTwitter, color: 'text-[#2596be]', href: '#' },
+  { name: 'Facebook', icon: FaFacebookF, color: 'text-[#d4bb47]', href: '#' },
+  { name: 'TikTok', icon: FaTiktok, color: 'text-[#d87474]', href: '#' },
 ]
 
 const containerVariants = {
@@ -28,11 +37,14 @@ const itemVariants = {
 
 export default function NavLinks() {
   return (
-    <motion.ul
+    <motion.div
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="py-4 px-6 space-y-4"
+      className="pb-4 px-6 space-y-4"
+    >
+    <motion.ul
+      className="py-4 space-y-4"
     >
       {links.map((link) => (
         <motion.li key={link.name} variants={itemVariants}>
@@ -44,7 +56,30 @@ export default function NavLinks() {
           </a>
         </motion.li>
       ))}
+      
     </motion.ul>
+
+<motion.hr variants={itemVariants} className="w-1/2 mx-auto" />
+      
+<motion.div 
+  variants={itemVariants}
+  className="grid grid-cols-4 mt-4 w-2/4 mx-auto"
+>
+  {socialLinks.map((link) => (
+    <Link key={link.name} href={link.href} passHref>
+      <motion.a
+        variants={itemVariants}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        className={`font-bold flex justify-center text-5xl hover:bg-white/20 transition duration-20 ease-in-out rounded-md py-2 items-center ${link.color}`}
+        aria-label={link.name}
+      >
+        <link.icon className="w-8 h-8" />
+      </motion.a>
+    </Link>
+  ))}
+</motion.div>
+    </motion.div>
   )
 }
 
