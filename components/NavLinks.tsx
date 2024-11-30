@@ -62,7 +62,7 @@ export default function NavLinks() {
 <motion.hr variants={itemVariants} className="w-1/2 mx-auto" />
       
 <motion.div 
-  variants={itemVariants}
+  transition={{ type: "spring" }}
   className="grid grid-cols-4 mt-4 w-2/4 mx-auto"
 >
   {socialLinks.map((link) => (
@@ -71,7 +71,7 @@ export default function NavLinks() {
         variants={itemVariants}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
-        className={`font-bold flex justify-center text-5xl hover:bg-white/20 transition duration-20 ease-in-out rounded-md py-2 items-center ${link.color}`}
+        className={`font-bold flex justify-center text-5xl hover:bg-white/20 transition duration-300 ease-in-out rounded-md py-2 items-center ${link.color}`}
         aria-label={link.name}
       >
         <link.icon className="w-8 h-8" />
