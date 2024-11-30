@@ -12,7 +12,7 @@ const TestimonialCard = ({
   testimonial: TestimonialProps;
 }) => {
   return (
-    <div className="bg-slate-800/50 p-10  text-white cursor-pointer flex flex-col text-center gap-5 border-2 border-white rounded-lg">
+    <div className="bewertungbg backdrop-blur-lg p-10  text-white cursor-pointer flex flex-col text-center gap-5 border-2 border-white rounded-lg">
       <div className="flex justify-center">
         <FaMessage className="bg-black border-2 border-black text-white p-1 text-3xl rounded-md" />
       </div>

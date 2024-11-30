@@ -27,6 +27,17 @@ const containerVariants = {
   }
 }
 
+const socialVariant = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      delayChildren: 1.2,
+      staggerChildren: 0.2
+    }
+  }
+}
+
 const itemVariants = {
   hidden: { y: 20, opacity: 0 },
   visible: {
@@ -64,6 +75,9 @@ export default function NavLinks() {
 <motion.div 
   transition={{ type: "spring" }}
   className="grid grid-cols-4 mt-4 w-2/4 mx-auto"
+  initial="hidden"
+  animate="visible"
+  variants={socialVariant}
 >
   {socialLinks.map((link) => (
     <Link key={link.name} href={link.href} passHref>

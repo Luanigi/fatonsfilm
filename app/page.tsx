@@ -7,6 +7,7 @@ import Dienstleistungen from '../components/Dienstleistungen';
 import Portfolio from '../components/Portfolio';
 import Kunden from '../components/Kunden';
 import About from '../components/About';
+import Bewertungen from "@/components/Bewertung"
 import Contact from '../components/Contact';
 import ScrollToTop from '@/components/ScrollToTop';
 import { useEffect, useRef } from 'react';
@@ -91,7 +92,8 @@ export default function Home() {
         <About />
         <Dienstleistungen />
         <Portfolio />
-        <Kunden />
+        {/* <Kunden /> */}
+        <Bewertungen/>
         <Contact />
         <ScrollToTop />
       </main>

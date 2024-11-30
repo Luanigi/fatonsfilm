@@ -21,20 +21,18 @@ body {
 }
 
 #testimonial {
-  background: linear-gradient(#000, rgba(0,0,0,0.9), rgb(17 24 39)),url("/bewertung.png");
+  background: linear-gradient(#000, rgba(0,0,0,0.9), rgb(0, 11, 33)),url("/bewertung.png");
   background-size: cover;
   background-position: center;
 }
 
-#kunden {
-  background: linear-gradient( #000, rgba(0,0,0,0.9), #000, #000, #000),url("/kunden.png"); /**/
-  background-size: cover;
+/* #kunden {
+  background: linear-gradient( #000, #000b21, #000b21,#000, #000, #000, #000);
   background-position: center;
-}
+} */
 
 #prjktBck {
-  background: linear-gradient(#000, rgba(0,0,0,0.9), #000); /*,url("/prjktbck.png")*/
-  background-size: cover;
+  background: linear-gradient(#000, rgba(0,0,0,0.9), #000),url("/bck.jpg"); /*,url("/prjktbck.png")*/
   background-position: center;
 }
 
@@ -52,6 +50,10 @@ body {
   background: linear-gradient(#000b21, rgba(0,0,0,0.5), #000b21),url("/bck.jpg");
   background-position: center;
   text-shadow: 1px 1px 2px #000b21;
+}
+
+.bewertungbg {
+  background: rgba(0, 11, 33, 0.5);
 }
 
 @media only screen and (max-width: 766px) {
