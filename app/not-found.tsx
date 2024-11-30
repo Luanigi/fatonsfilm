@@ -1,4 +1,3 @@
-
 import Link from "next/link"
 import Navbar from "../components/Header"
 import Contact from "@/components/Contact"

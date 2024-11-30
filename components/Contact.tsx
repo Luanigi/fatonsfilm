@@ -15,7 +15,9 @@ export default function Footer() {
                 die Linse zu erzählen und unvergessliche Erlebnisse für meine Kunden zu 
                 schaffen.
             </p>
+            
           </div>
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
@@ -37,6 +39,11 @@ export default function Footer() {
               <li>
                 <Link href="/#contact" className="hover:text-white transition-colors">
                   Kontakt ✉️
+                </Link>
+              </li>
+              <li>
+                <Link href={"/impressum"} className="text-blue-300">
+                  Impressum 📄
                 </Link>
               </li>
             </ul>
@@ -76,7 +83,6 @@ export default function Footer() {
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 text-sm text-center">
           <p>&copy; {new Date().getFullYear()} | Faton.ca | All rights reserved.</p>
-
         </div>
         <Image src={"/icon2.png"} alt="Logo" width={100} height={100} className="flex m-auto opacity-40"/>
       </div>

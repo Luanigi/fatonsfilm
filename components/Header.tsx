@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Image from 'next/image';
 import { FaInstagram, FaFacebookF, FaTiktok, FaTwitter  } from "react-icons/fa6";
-import NavLinks from './nav-links'
+import NavLinks from './NavLinks'
 
 export default function Header() {
     const [isHovered, setIsHovered] = useState(false);
