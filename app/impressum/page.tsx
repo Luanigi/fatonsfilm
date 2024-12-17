@@ -10,12 +10,12 @@ export default function Impressum() {
         <div className="backdrop-blur-2xl p-10 rounded-lg md:mt-5 mt-20 md:w-3/6 w-11/12 text-wrap" data-aos="fade-up">
         <h1 className="text-3xl underline pb-2 font-bold">Impressum</h1>
         <h2 className="text-xl pb-5 font-bold">Angaben gemäß § 5 TMG</h2>
-        <p>Name Nachname</p>
-        <p>Adresse/Firmenadresse</p>
-        <p>Postleizahl und Stadt</p>
+        <p>Faton Cakaj</p>
+        <p>In der Hocksche 2</p>
+        <p>58099 Hagen</p>
 
         <h2 className="text-xl pt-5 pb-1 font-bold">Kontakt</h2>
-        <p>Telefon: 00000000</p>
+        <p>Telefon: +49 233 13422243</p>
         <p>E-Mail: <Link href="mailto:post@fatonsfilmproduction.de" className="text-blue-500 drop-shadow-lg">post@fatonsfilmproduction.de</Link></p>
 
         <h2 className="text-xl pt-5 pb-1 font-bold">EU-Streitschlichtung</h2>
