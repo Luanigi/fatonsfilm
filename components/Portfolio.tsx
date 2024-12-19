@@ -28,12 +28,12 @@ export default function Portfolio() {
   const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
 
   const movies: Movie[] = [
-    { id: 1, title: "Video Titel", category: "Short Film", thumbnail: "/thumbnails/thumbnail.png", video: "/yurvideo.mp4" },
-    { id: 2, title: "Video Titel", category: "Documentary", thumbnail: "/thumbnails/thumbnail.png", video: "/yurvideo.mp4" },
-    { id: 3, title: "Ernim ibrahimi - KENA KENA", category: "Music Video", thumbnail: "/thumbnails/musicvideo.jpg", video: "https://player.vimeo.com/video/1033914085?h=06f69e8a14&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" },
-    { id: 4, title: "youtaste Advertisement", category: "Ad", thumbnail: "/thumbnails/thumbnail.png", video: "https://player.vimeo.com/video/689201130?h=7cc52c1521" },
-    { id: 5, title: "Video Titel", category: "Short Film", thumbnail: "/thumbnails/thumbnail.png", video: "/yurvideo.mp4" },
-    { id: 6, title: "Video Titel", category: "Corporate", thumbnail: "/thumbnails/thumbnail.png", video: "/yurvideo.mp4" },
+    { id: 1, title: "Abiball 2024", category: "Moment Capture", thumbnail: "/thumbnails/thumbnail.png", video: "https://www.youtube.com/embed/hs_iSmaI_DY" },
+    { id: 2, title: "Jekyll and Hyde - Hagen", category: "Werbung", thumbnail: "/thumbnails/thumbnail.png", video: "https://player.vimeo.com/video/690455956?h=aa02fb345e" },
+    { id: 3, title: "Kurve Kriegen 2024", category: "Trailer", thumbnail: "/thumbnails/thumbnail.png", video: "/videos/trailerrr.mp4" },
+    { id: 4, title: "youtaste Advertisement", category: "Werbung", thumbnail: "/thumbnails/thumbnail.png", video: "https://player.vimeo.com/video/689201130?h=7cc52c1521" },
+    { id: 5, title: "Hochzeit", category: "Hochzeits Video", thumbnail: "/thumbnails/thumbnail.png", video: "https://www.youtube.com/embed/MtQ4TKOBOrQ" },
+    { id: 6, title: "Auto Showcase", category: "showcase", thumbnail: "/thumbnails/thumbnail.png", video: "https://www.youtube.com/embed/7QrTjrm8U6Y" },
   ];
 
   return (
@@ -47,7 +47,7 @@ export default function Portfolio() {
             Meine Projekte
           </h2>
 
-          <video src="/yurvideo.mp4" className="rounded-lg w-3/4 m-auto my-10 h-full object-cover" data-aos="fade-in" controls></video>
+          {/* <video src="/yurvideo.mp4" className="rounded-lg w-3/4 m-auto my-10 h-full object-cover" data-aos="fade-in" controls></video> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {movies.map((movie) => (
               <div
