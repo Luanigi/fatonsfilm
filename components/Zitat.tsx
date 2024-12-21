@@ -13,7 +13,7 @@ export default function Zitat() {
           sondern auch das Herz berühren. Jedes Projekt ist eine neue Gelegenheit, 
           Magie durch die Linse zu schaffen.      
         </p>
-        <h1 className='ml-auto mt-2 font-cursive' data-aos="fade-up-left">/ / / Faton cakaj</h1>
+        <h2 className='ml-auto mt-2 font-cursive' data-aos="fade-up-left">/ / / Faton cakaj</h2>
     </div>
     </div>
   )

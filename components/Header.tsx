@@ -32,16 +32,16 @@ export default function Header() {
       <div 
         className={`fixed flex justify-center shadow-2xl translate-y-1/2 h-2/4 bg-black/10 backdrop-blur-lg text-white transform transition-transform duration-300 ease-in-out z-[50] ${
             isHovered ? 'translate-x-0' : '-translate-x-full'
-        } md:block hidden`}
+        } lg:block hidden`}
         style={{ width: '256px' }} 
       
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}>
         <nav className="flex flex-col h-full justify-center">
-        <h1 className="text-3xl font-bold flex">
+        <h5 className="text-3xl font-bold flex">
             <Image className="mr-3 rounded-md ml-3 mb-4" src={"/Logo.png"} width={40} height={30} alt={" "}/>
             Faton&apos;s Film
-        </h1>
+        </h5>
           <Link href="/#home">
             <p className="py-2 px-4 hover:bg-white/20 transition duration-20">Home</p>
           </Link>
@@ -79,7 +79,7 @@ export default function Header() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
         <button
-            className={`fixed top-1/2 h-[455px]  shadow-2xl text-center bg-black/10  text-white text-xl transform -translate-y-1/2 p-2 transition-transform duration-300 ease-in-out md:block hidden ${
+            className={`fixed top-1/2 h-[455px]  shadow-2xl text-center bg-black/10  text-white text-xl transform -translate-y-1/2 p-2 transition-transform duration-300 ease-in-out lg:block hidden ${
                 isHovered ? 'translate-x-64 backdrop-blur-lg' : 'backdrop-blur-lg translate-x-0'
             }`}
 
@@ -93,13 +93,13 @@ export default function Header() {
 
 
       {/* Responsive Navbar for iPad or Smaller */}
-      <nav className="w-full h-[65px] absolute top-0 left-0 right-0 z-50 md:hidden" data-aos="fade-down">
+      <nav className="w-full h-[65px] absolute top-0 left-0 right-0 z-50 lg:hidden" data-aos="fade-down">
       <div className="backdrop-blur-md bg-black/20 p-4 shadow-lg">
         <div className="flex justify-between items-center">
-        <h1 className="text-3xl font-bold flex text-white">
+        <h5 className="text-3xl font-bold flex text-white">
             <Image className="mr-3 rounded-md " src={"/Logo.png"} width={40} height={30} alt={" "}/>
             Faton.ca
-        </h1>
+        </h5>
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-gray-800 focus:outline-none focus:text-gray-500"

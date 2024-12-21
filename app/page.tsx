@@ -5,7 +5,7 @@ import Hero from '../components/Hero';
 import Zitat from '../components/Zitat';
 import Dienstleistungen from '../components/Dienstleistungen';
 import Portfolio from '../components/Portfolio';
-import Kunden from '../components/Kunden';
+// import Kunden from '../components/Kunden';
 import About from '../components/About';
 import Bewertungen from "@/components/Bewertung"
 import Contact from '../components/Contact';

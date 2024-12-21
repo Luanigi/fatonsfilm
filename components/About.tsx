@@ -8,7 +8,6 @@ export default function About() {
             <Image className="w-full h-auto rounded-lg shadow-2xl" src={"/Faton.jpg"} layout="responsive" width={900} height={900} alt={" "} data-aos="fade-up"/>   
           </div>
 
-
           <div className="md:w-1/2 md:pl-12 mt-8 md:mt-0">
             <h2 className="text-4xl font-bold" data-aos="fade-up" data-aos-delay="300">Faton Cakaj, Hagen📍</h2>
             <p className="mt-4 text-lg text-justify" data-aos="fade-up" data-aos-delay="500">

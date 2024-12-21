@@ -10,7 +10,7 @@ export default function Hero() {
           <CiPlay1 className="text-lg mt-1 text-center" /> 
           <p className="tracking-wider">DIRECTED BY FATON CAKAJ</p>
         </div>
-        <h1 className="text-6xl font-bold md:py-0 py-5" data-aos="zoom-in">Erfolg durch Video</h1>
+        <h3 className="text-6xl font-bold md:py-0 py-5" data-aos="zoom-in">Erfolg durch Video</h3>
         <Link href="/#projekte">
           <div data-aos="zoom-in">
             <button
