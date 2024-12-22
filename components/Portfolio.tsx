@@ -1,4 +1,3 @@
-import { IoIosArrowForward } from "react-icons/io";
 import { useState } from "react";
 import Image from "next/image";
 import { Play } from "lucide-react";
@@ -24,16 +23,15 @@ interface Movie {
 }
 
 export default function Portfolio() {
-  // Use the Movie | null type for selectedMovie state
   const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
 
   const movies: Movie[] = [
-    { id: 1, title: "Abiball 2024", category: "Moment Capture", thumbnail: "/thumbnails/thumbnail.png", video: "https://www.youtube.com/embed/hs_iSmaI_DY" },
-    { id: 2, title: "Jekyll and Hyde - Hagen", category: "Werbung", thumbnail: "/thumbnails/thumbnail.png", video: "https://player.vimeo.com/video/690455956?h=aa02fb345e" },
-    { id: 3, title: "Kurve Kriegen 2024", category: "Trailer", thumbnail: "/thumbnails/thumbnail.png", video: "/videos/trailerrr.mp4" },
-    { id: 4, title: "youtaste Advertisement", category: "Werbung", thumbnail: "/thumbnails/thumbnail.png", video: "https://player.vimeo.com/video/689201130?h=7cc52c1521" },
-    { id: 5, title: "Hochzeit", category: "Hochzeits Video", thumbnail: "/thumbnails/thumbnail.png", video: "https://www.youtube.com/embed/MtQ4TKOBOrQ" },
-    { id: 6, title: "Auto Showcase", category: "showcase", thumbnail: "/thumbnails/thumbnail.png", video: "https://www.youtube.com/embed/7QrTjrm8U6Y" },
+    { id: 1, title: "Abiball 2024", category: "Moment Capture", thumbnail: "/thumbnails/abiballthumb.png", video: "https://www.youtube.com/embed/hs_iSmaI_DY" },
+    { id: 2, title: "Jekyll and Hyde - Hagen", category: "Werbung", thumbnail: "/thumbnails/jekyllandhydethumb.png", video: "https://player.vimeo.com/video/690455956?h=aa02fb345e" },
+    { id: 3, title: "Kurve Kriegen 2024", category: "Trailer", thumbnail: "/thumbnails/kurvekriegenthumb.png", video: "/videos/trailerrr.mp4" },
+    { id: 4, title: "youtaste Advertisement", category: "Werbung", thumbnail: "/thumbnails/youtastethumb.png", video: "https://player.vimeo.com/video/689201130?h=7cc52c1521" },
+    { id: 5, title: "Hochzeit", category: "Hochzeits Video", thumbnail: "/thumbnails/hochzeitthumb.png", video: "https://www.youtube.com/embed/MtQ4TKOBOrQ" },
+    { id: 6, title: "Auto Showcase", category: "showcase", thumbnail: "/thumbnails/carshowcasethumb.png", video: "https://www.youtube.com/embed/7QrTjrm8U6Y" },
   ];
 
   return (
@@ -47,8 +45,7 @@ export default function Portfolio() {
             Meine Projekte
           </h2>
 
-          {/* <video src="/yurvideo.mp4" className="rounded-lg w-3/4 m-auto my-10 h-full object-cover" data-aos="fade-in" controls></video> */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 eso">
             {movies.map((movie) => (
               <div
                 key={movie.id}
@@ -59,15 +56,16 @@ export default function Portfolio() {
                 <Image
                   src={movie.thumbnail}
                   alt={movie.title}
-                  width={600}
-                  height={400}
-                  className="w-full h-30 object-cover hover:bg-slate-800/20"
+                  className="h-20 w-20 object-cover hover:bg-slate-800/20"
+                  layout="responsive"
+                  width={20}
+                  height={20}
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <Button
                     variant="outline"
                     size="icon"
-                    className="rounded-full bg-white/20 hover:bg-white/40 text-white"
+                    className="mb-[100px] rounded-full bg-white/20 hover:bg-white/40 text-white"
                     onClick={() => setSelectedMovie(movie)}
                   >
                     <Play className="h-6 w-6" />
@@ -103,6 +101,14 @@ export default function Portfolio() {
           </DialogContent>
         </Dialog>
       </section>
+
+      <style jsx>{`
+        .fixed-size {
+          width: 600px; /* Set a fixed width */
+          height: 400px; /* Set a fixed height */
+          object-fit: cover; /* Ensure the image covers the area without distortion */
+        }
+      `}</style>
     </>
   );
 }
