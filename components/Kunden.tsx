@@ -38,7 +38,7 @@ export default function Kunden() {
                 >
                   <Image
                     src={kunde.img}
-                    alt={`${name}`}
+                    alt={kunde.name}
                     width={280}
                     height={180}
                     className="rounded hover:scale-120 transition ease-in-out bg-transparent"
