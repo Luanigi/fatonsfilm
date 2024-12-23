@@ -81,8 +81,17 @@ export default function Home() {
       <div className="inner-cursor" ref={innerCursorRef}></div>
       <div className="outer-cursor" ref={outerCursorRef}></div>
       <Head>
-        <title>My Portfolio</title>
-        <meta name="description" content="Professional Videographer Portfolio" />
+        <title>Faton Cakaj</title>
+        <meta name="description" content="Ich bin ein professioneller Videofilmer mit über 10 Jahren Erfahrung im Festhalten schöner Momente. Meine Leidenschaft ist es, Geschichten durch die Linse zu erzählen und unvergessliche Erlebnisse für meine Kunden zu schaffen." />
+        <meta property="og:title" content="Faton Cakaj" />
+        <meta property="og:description" content="Ich bin ein professioneller Videofilmer mit über 10 Jahren Erfahrung im Festhalten schöner Momente. Meine Leidenschaft ist es, Geschichten durch die Linse zu erzählen und unvergessliche Erlebnisse für meine Kunden zu schaffen." />
+        <meta property="og:image" content="https://fatonsfilmproduction.de/_next/image?url=%2FFaton.jpg&w=1920&q=75" />
+        <meta property="og:url" content="https://fatonsfilmproduction.de/" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Faton Cakaj" />
+        <meta name="twitter:description" content="Ich bin ein professioneller Videofilmer mit über 10 Jahren Erfahrung im Festhalten schöner Momente. Meine Leidenschaft ist es, Geschichten durch die Linse zu erzählen und unvergessliche Erlebnisse für meine Kunden zu schaffen." />
+        <meta name="twitter:image" content="https://fatonsfilmproduction.de/_next/image?url=%2FFaton.jpg&w=1920&q=75" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
