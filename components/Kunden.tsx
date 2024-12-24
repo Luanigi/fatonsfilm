@@ -2,7 +2,7 @@ import React from 'react'
 import Bewertungen from "./Bewertung"
 import Image from 'next/image';
 import { Button } from '@radix-ui/themes';
-import { Play } from 'lucide-react';
+import Marquee from "react-fast-marquee";
 
 interface Kunden {
   id: number;
@@ -27,24 +27,27 @@ export default function Kunden() {
       </div>
       <h1 className=' text-white text-4xl text-center pb-10 px-3' data-aos="fade-up-right">Erfolgreiche Zusammenarbeit 🤝</h1>
       
-      <div className="flex w-10/12 mx-auto m-auto mb-20 px-10 bg-blue-900/50 backdrop-blur-lg rounded-lg">
+      <div className="flex md:w-6/12 w-11/12 mx-auto m-auto mb-20 px-10 bg-blue-900 backdrop-blur-lg rounded-lg">
         <div className="grid lg:flex md:grid-cols-2 grid-cols-1 gap-6 text-white text-center mx-auto py-5">
+        <Marquee direction="right" pauseOnHover={true} autoFill={true} gradient={true} gradientColor="#1e3a8a" gradientWidth={150}>
               {kunden.map((kunde) => (
                 <div
                   key={kunde.id}
-                  className=" rounded m-auto  hover:scale-110 transition ease-in-out"
+                  className=" rounded m-auto px-5 hover:scale-110 transition ease-in-out"
                   data-aos= "zoom-in"
                   data-aos-duration="500"
                 >
                   <Image
                     src={kunde.img}
                     alt={kunde.name}
-                    width={280}
-                    height={180}
-                    className="rounded hover:scale-120 transition ease-in-out bg-transparent"
+                    width={150}
+                    height={150}
+                    className="rounded hover:scale-120 transition ease-in-out bg-transparent
+                    sm:w-100 sm:h-100 md:w-150 md:h-150"
                   />
                 </div>
               ))}
+          </Marquee>
         </div>
       </div>
 
