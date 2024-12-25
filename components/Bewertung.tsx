@@ -11,6 +11,11 @@ const testimonials = [
     name: "Sarah B.",
     review:
       "Ein absoluter Profi, der jeden Moment perfekt einfängt. Ich bin jedes Mal begeistert von den Ergebnissen. Freundlich und sehr kompetent!",
+  },  
+  {
+    name: "Nino G.",
+    review:
+      "Wir sind stolz, solch einen talentierten Künstler miterleben zu dürfen. Seine Filme sind einfach meisterhaft.",
   },
   {
     name: "Sophie K.",
@@ -23,6 +28,11 @@ const testimonials = [
       "Erstklassige Videos, die Emotionen und Momente so gut einfangen! Ein sehr netter und talentierter Videograph, absolut empfehlenswert!",
   },
   {
+    name: "Malik N.",
+    review:
+      "Noch nie habe ich einen Menschen getroffen, der nur durch Zuhören die Bilder so 1 zu 1 visualisieren kann. Die Tonqualität und Farben sind einfach fantastisch!",
+  },
+  {
     name: "Jonas W.",
     review:
       "Ein Videograph, der wirklich sein Handwerk versteht. Fantastische Bildqualität, schnelle Lieferung und super freundlich. Sehr empfehlenswert!",
@@ -31,6 +41,16 @@ const testimonials = [
     name: "Lisa M.",
     review:
       "Super Zusammenarbeit! Er versteht sofort, was man möchte, und setzt es perfekt um. Sympathisch und sehr engagiert, klare Empfehlung.",
+  },
+  {
+    name: "Maximilian E.",
+    review:
+      "Er versteht es, Emotionen durch seine Filme zu transportieren. Ein wahrer Meister seines Fachs!",
+  },
+  {
+    name: "Jonas F.",
+    review:
+      "Seine Filme sind visuell beeindruckend und emotional packend. Man merkt, dass er ein wahres Gespür für die richtige Inszenierung hat.",
   },
 ];
 
