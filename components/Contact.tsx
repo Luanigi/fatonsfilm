@@ -1,6 +1,7 @@
 import Link from "next/link"
-import { Facebook, Instagram, Youtube, Twitter } from "lucide-react"
+import { Facebook, Instagram, Youtube, MailPlus, PhoneCall } from "lucide-react"
 import Image from "next/image"
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -49,40 +50,39 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Bleib im Kontakt!</h3>
-            <form>
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex h-10 w-full rounded-md border border-input bg-slate-900 px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-              />
-              <br />
-              <button type="submit" className="bg-zinc-900 hover:bg-zinc-800 transition duration-200 ease-in-out rounded-lg p-2 w-full">
-                Subscribe
-              </button>
-            </form>
-            <div className="flex space-x-4 mt-4">
-              <Link href="#" className="hover:text-white transition-colors">
-                <Facebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
-              </Link>
-              <Link href="#" className="hover:text-white transition-colors">
+            <h3 className="text-lg font-semibold">Bleib im Kontakt!</h3>
+            <div className="grid space-y-2 mt-4">
+              <div className="flex gap-1">
+                <Link href="mailto:https://fatonsfilmproduction.de/" className="hover:text-white flex transition-colors py-2 px-4 w-2/6 border-white border-2  rounded">
+                  <MailPlus className="h-5 w-5"/>
+                  <span className="ml-auto">Mail</span>
+                </Link>
+                <Link href="tel:+4923313422243" className="hover:text-white flex transition-colors py-2 px-4 w-4/6 border-white border-2  rounded">
+                  <PhoneCall  className="h-5 w-5"/>
+                  <span className="ml-auto">Mobil Nummer</span>
+                </Link>
+              </div>
+
+              <Link href="https://www.instagram.com/faton.ca/" className="hover:text-white transition-colors py-2 px-4 w-6/6 flex border-white border-2 rounded">
                 <Instagram className="h-5 w-5" />
-                <span className="sr-only">Instagram</span>
+                <span className="ml-auto">Instagram</span>
               </Link>
-              <Link href="#" className="hover:text-white transition-colors">
-                <Youtube className="h-5 w-5" />
-                <span className="sr-only">YouTube</span>
+
+              <div className="flex gap-1">
+              <Link href="https://www.facebook.com/p/fatonca-100066291680163/" className="hover:text-white transition-colors py-2 px-4 flex w-3/6 bg-transparent border-white border-2 rounded">
+                <Facebook className="h-5 w-5" />
+                <span className="ml-auto">Facebook</span>
               </Link>
-              <Link href="#" className="hover:text-white transition-colors">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
+              <Link href="#" className="hover:text-white transition-colors py-2 px-4 flex w-3/6 bg-transparent border-white border-2 rounded">
+                <FaWhatsapp  className="h-5 w-5" />
+                <span className="ml-auto">Whatsapp</span>
               </Link>
+              </div>
             </div>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 text-sm text-center">
-          <p>&copy; {new Date().getFullYear()} | Faton.ca | All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} | Faton Cakaj | All rights reserved.</p>
         </div>
         <Image src={"/icon2.png"} alt="Logo" width={100} height={100} className="flex m-auto opacity-40"/>
       </div>
