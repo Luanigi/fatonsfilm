@@ -53,7 +53,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold">Bleib im Kontakt!</h3>
             <div className="grid space-y-2 mt-4">
               <div className="flex gap-1">
-                <Link href="mailto:https://fatonsfilmproduction.de/" className="hover:text-white flex transition-colors py-2 px-4 w-2/6 border-white border-2  rounded">
+                <Link href="mailto:post@fatonsfilmproduction.de" className="hover:text-white flex transition-colors py-2 px-4 w-2/6 border-white border-2  rounded">
                   <MailPlus className="h-5 w-5"/>
                   <span className="ml-auto">Mail</span>
                 </Link>
