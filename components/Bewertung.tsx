@@ -62,7 +62,7 @@ function Testimonials() {
           <div className="text-[#1c4c74] px-2 text-xl font-extrabold uppercase rounded-md mb-5" data-aos="fade-up-left">
             Bewertungen
           </div>
-          <h3 className="dark:text-white text-black text-[50px] mb-10" data-aos="fade-up">Was sagen unsere Kunden?</h3>
+          <h3 className="text-white text-[50px] mb-10" data-aos="fade-up">Was sagen unsere Kunden?</h3>
         </div>
         <Swiper
           modules={[Autoplay]}

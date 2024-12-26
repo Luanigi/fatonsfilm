@@ -63,13 +63,13 @@ export default function Footer() {
                 </Link>
               </div>
 
-              <Link href="https://www.instagram.com/faton.ca/" className="hover:text-white transition-colors py-2 px-4 w-6/6 flex border-white border-2 rounded">
+              <Link href="https://www.instagram.com/faton.ca/" target="_blank" className="hover:text-white transition-colors py-2 px-4 w-6/6 flex border-white border-2 rounded">
                 <Instagram className="h-5 w-5" />
                 <span className="ml-auto">Instagram</span>
               </Link>
 
               <div className="flex gap-1">
-              <Link href="https://www.facebook.com/p/fatonca-100066291680163/" className="hover:text-white transition-colors py-2 px-4 flex w-3/6 bg-transparent border-white border-2 rounded">
+              <Link href="https://www.facebook.com/p/fatonca-100066291680163/" target="_blank" className="hover:text-white transition-colors py-2 px-4 flex w-3/6 bg-transparent border-white border-2 rounded">
                 <Facebook className="h-5 w-5" />
                 <span className="ml-auto">Facebook</span>
               </Link>
