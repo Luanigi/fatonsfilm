@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { FaInstagram, FaFacebookF, FaTiktok, FaTwitter } from "react-icons/fa6";
+import { FaInstagram, FaFacebookF} from "react-icons/fa6";
+import { MailPlus, PhoneCall } from "lucide-react"
 
 const links = [
   { name: 'home', href: '/' },
@@ -10,10 +11,10 @@ const links = [
 ]
 
 const socialLinks = [
-  { name: 'Instagram', icon: FaInstagram, color: 'text-[#849cc8]', href: '#' },
-  { name: 'Twitter', icon: FaTwitter, color: 'text-[#2596be]', href: '#' },
-  { name: 'Facebook', icon: FaFacebookF, color: 'text-[#d4bb47]', href: '#' },
-  { name: 'TikTok', icon: FaTiktok, color: 'text-[#d87474]', href: '#' },
+  { name: 'Instagram', icon: FaInstagram, color: 'text-[#849cc8]', href: 'https://www.instagram.com/faton.ca/' },
+  { name: 'Facebook', icon: FaFacebookF, color: 'text-[#2596be]', href: 'https://www.facebook.com/p/fatonca-100066291680163/' },
+  { name: 'Mail', icon: MailPlus, color: 'text-[#d4bb47]', href: 'mailto:post@fatonsfilmproduction.de' },
+  { name: 'Telefon', icon: PhoneCall, color: 'text-[#d87474]', href: 'tel:+4923313422243' },
 ]
 
 const containerVariants = {
@@ -32,8 +33,8 @@ const socialVariant = {
   visible: {
     opacity: 1,
     transition: {
-      delayChildren: 0.6, // Shortened delay for smoother animation
-      staggerChildren: 0.15 // Reduced stagger for smoother sequence
+      delayChildren: 0.6,
+      staggerChildren: 0.15
     }
   }
 }

@@ -5,8 +5,11 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Image from 'next/image';
-import { FaInstagram, FaFacebookF, FaTiktok, FaTwitter  } from "react-icons/fa6";
+import { FaInstagram, FaFacebookF  } from "react-icons/fa6";
+import { FiPhoneCall } from "react-icons/fi";
+import { LuMailPlus } from "react-icons/lu";
 import NavLinks from './NavLinks'
+
 
 export default function Header() {
     const [isHovered, setIsHovered] = useState(false);
@@ -56,17 +59,17 @@ export default function Header() {
           </Link>
           <hr className='w-1/2 text-center mx-auto my-3'/>
           <div className="grid grid-cols-4 mx-auto mt-3">
-            <Link href="#contact" className="font-bold flex">
+            <Link href="https://www.instagram.com/faton.ca/" target="_blank" className="font-bold flex">
               <FaInstagram className="text-5xl py-2 text-[#849cc8]  hover:bg-white/20 transition duration-20 ease-in-out rounded-md" />            
             </Link>
-            <Link href="#contact" className="font-bold flex ">
-              <FaTwitter className="text-5xl py-2 text-[#2596be] hover:bg-white/20 transition duration-20 ease-in-out rounded-md" />            
+            <Link href="mailto:post@fatonsfilmproduction.de" className="font-bold flex ">
+              <LuMailPlus className="text-5xl py-2 text-[#2596be] hover:bg-white/20 transition duration-20 ease-in-out rounded-md" />            
             </Link>
-            <Link href="#contact" className="font-bold flex ">
+            <Link href="https://www.facebook.com/p/fatonca-100066291680163/" target="_blank" className="font-bold flex ">
               <FaFacebookF className="text-5xl py-2 text-[#d4bb47]  hover:bg-white/20 transition duration-20 ease-in-out rounded-md" />            
             </Link>
-            <Link href="#contact" className="font-bold flex ">
-              <FaTiktok className="text-5xl py-2 text-[#d87474] hover:bg-white/20 transition duration-20 ease-in-out rounded-md" />            
+            <Link href="tel:+4923313422243" className="font-bold flex ">
+              <FiPhoneCall className="text-5xl py-2 text-[#d87474] hover:bg-white/20 transition duration-20 ease-in-out rounded-md" />            
             </Link>
           </div>
         </nav>
