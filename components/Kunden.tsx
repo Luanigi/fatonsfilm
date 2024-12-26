@@ -12,7 +12,7 @@ interface Kunden {
 export default function Kunden() {
   const kunden: Kunden[] = [
     { id: 1, img: "/kunden/kunde4.png", name: "Landesvereinigung Kulturelle Jugendarbeit NRW e.V."},
-    { id: 2, img: "/kunden/kunde7.png", name: "DOOSTI",},
+    { id: 2, img: "/kunden/kunde18.png", name: "Kurve Kriegen",},
     { id: 3, img: "/kunden/kunde3.png", name: "Deutsche Vermögensberatung"},
     { id: 4, img: "/kunden/kunde1.png", name: "Ministerium für Kinder Nordrhein-Westfalen" },
     { id: 5, img: "/kunden/kunde5.webp", name: "You taste" },
@@ -26,10 +26,15 @@ export default function Kunden() {
     { id: 13, img: "/kunden/kunde13.png", name: "Barber Club" },
     { id: 14, img: "/kunden/kunde14.png", name: "Traumringhaus" },
     { id: 15, img: "/kunden/kunde15.png", name: "Lag Tanz NRW" },
+    { id: 16, img: "/kunden/kunde16.jpg", name: "La grange" },
+    { id: 17, img: "/kunden/kunde17.jpg", name: "Fm Cakaj" },
+    { id: 18, img: "/kunden/kunde7.png", name: "DOOSTI" },
+    { id: 19, img: "/kunden/kunde19.png", name: "Stadt Bäckerei Kamp" },
+    { id: 20, img: "/kunden/kunde20.jpg", name: "m stage tanzart" },
   ];
 
   return (
-    <div id="kunden" className="bg-black h-auto md:pt-0 pt-20"> {/**/}
+    <div id="kunden" className="bg-black h-auto md:pt-0 pt-20">
        <div className="text-[#1c4c74] text-center px-2 text-xl font-extrabold uppercase rounded-md mb-5" data-aos="fade-up-left">
             Partner
       </div>

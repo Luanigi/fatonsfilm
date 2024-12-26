@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Facebook, Instagram, Youtube, MailPlus, PhoneCall } from "lucide-react"
 import Image from "next/image"
 import { FaWhatsapp } from "react-icons/fa";
+import Whatsappbtn from "./Whatsappbtn";
 
 export default function Footer() {
   return (
@@ -73,10 +74,7 @@ export default function Footer() {
                 <Facebook className="h-5 w-5" />
                 <span className="ml-auto">Facebook</span>
               </Link>
-              <Link href="#" className="hover:text-white transition-colors py-2 px-4 flex w-3/6 bg-transparent border-white border-2 rounded">
-                <FaWhatsapp  className="h-5 w-5" />
-                <span className="ml-auto">Whatsapp</span>
-              </Link>
+              <Whatsappbtn />
               </div>
             </div>
           </div>
