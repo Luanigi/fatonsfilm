@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { Facebook, Instagram, Youtube, MailPlus, PhoneCall } from "lucide-react"
 import Image from "next/image"
-import { FaWhatsapp } from "react-icons/fa";
 import Whatsappbtn from "./Whatsappbtn";
 
 export default function Footer() {

@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { Button } from "@/components/ui/button"
 import { FaWhatsapp } from "react-icons/fa";
 import {
   Dialog,
@@ -10,7 +9,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { X } from 'lucide-react'
 import Image from 'next/image'
 
 export default function PhotoModal() {
@@ -31,7 +29,7 @@ export default function PhotoModal() {
         <div className="mt-4">
           <Image
             src="/whatsappqr.png"
-            alt="Beispielfoto"
+            alt="Whatsapp QR Code"
             width={300}
             height={300}
             className="rounded-md m-auto object-cover"
