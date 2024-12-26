@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | Faton Cakaj",
   },
   description: "Ich bin ein professioneller Videofilmer mit über 10 Jahren Erfahrung im Festhalten schöner Momente. Meine Leidenschaft ist es, Geschichten durch die Linse zu erzählen und unvergessliche Erlebnisse für meine Kunden zu schaffen.",
-  metadataBase: new URL("https://www.fatonsfilmproduction.de/"),
+  metadataBase: new URL("https://fatonsfilmproduction.de/"),
   keywords: [
     "Faton Cakaj",
     "fatoncakaj",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Faton Cakaj",
     description: "Ich bin ein professioneller Videofilmer mit über 10 Jahren Erfahrung im Festhalten schöner Momente. Meine Leidenschaft ist es, Geschichten durch die Linse zu erzählen und unvergessliche Erlebnisse für meine Kunden zu schaffen.",
-    url: "https://www.fatonsfilmproduction.de/",
+    url: "https://fatonsfilmproduction.de/",
     siteName: "Faton Cakaj",
     locale: "de_GER",
     type: "website",
