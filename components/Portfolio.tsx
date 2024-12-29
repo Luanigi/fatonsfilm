@@ -28,7 +28,7 @@ export default function Portfolio() {
   const movies: Movie[] = [
     { id: 1, title: "Abiball 2024", category: "Moment Capture", thumbnail: "/thumbnails/abiballthumb.png", video: "https://www.youtube.com/embed/hs_iSmaI_DY" },
     { id: 2, title: "Jekyll and Hyde - Hagen", category: "Werbung", thumbnail: "/thumbnails/jekyllandhydethumb.png", video: "https://player.vimeo.com/video/690455956?h=aa02fb345e" },
-    { id: 3, title: "Kurve Kriegen 2024", category: "Trailer", thumbnail: "/thumbnails/kurvekriegenthumb.png", video: "/videos/trailerrr.mp4" },
+    { id: 3, title: "Kurve Kriegen 2024", category: "Musik Video", thumbnail: "/thumbnails/kurvekriegenthumb.png", video: "https://www.youtube.com/embed/keq6qGO227o" },
     { id: 4, title: "youtaste Advertisement", category: "Werbung", thumbnail: "/thumbnails/youtastethumb.png", video: "https://player.vimeo.com/video/689201130?h=7cc52c1521" },
     { id: 5, title: "Hochzeit", category: "Hochzeits Video", thumbnail: "/thumbnails/hochzeitthumb.png", video: "https://www.youtube.com/embed/MtQ4TKOBOrQ" },
     { id: 6, title: "Auto Showcase", category: "showcase", thumbnail: "/thumbnails/carshowcasethumb.png", video: "https://www.youtube.com/embed/7QrTjrm8U6Y" },
