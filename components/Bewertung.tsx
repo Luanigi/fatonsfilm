@@ -8,7 +8,22 @@ import "swiper/css/autoplay"
 
 const testimonials = [
   {
-    name: "Sarah B.",
+    name: "Leonie M.",
+    review:
+      "Ein unglaubliches Gespür für Atmosphäre und Details. Die Zusammenarbeit war angenehm und das Ergebnis übertraf all meine Erwartungen.",
+  },
+  {
+    name: "Kumar R.",
+    review:
+      "Professionell, kreativ und immer mit dem Blick für das Wesentliche. Ich kann ihn nur wärmstens weiterempfehlen!",
+  },
+  {
+    name: "Emilia W.",
+    review:
+      "Jedes Projekt mit ihm ist ein kleines Kunstwerk. Die Leidenschaft und Präzision, mit der gearbeitet wird, ist beeindruckend.",
+  },
+  {
+    name: "Ali B.",
     review:
       "Ein absoluter Profi, der jeden Moment perfekt einfängt. Ich bin jedes Mal begeistert von den Ergebnissen. Freundlich und sehr kompetent!",
   },  
@@ -38,7 +53,7 @@ const testimonials = [
       "Ein Videograph, der wirklich sein Handwerk versteht. Fantastische Bildqualität, schnelle Lieferung und super freundlich. Sehr empfehlenswert!",
   },
   {
-    name: "Lisa M.",
+    name: "José M.",
     review:
       "Super Zusammenarbeit! Er versteht sofort, was man möchte, und setzt es perfekt um. Sympathisch und sehr engagiert, klare Empfehlung.",
   },
