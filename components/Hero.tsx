@@ -166,7 +166,7 @@ export default function Hero() {
       {/* Expanded Modal Overlay */}
       {isExpanded && (
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 animate-in fade-in duration-300"
+          className="fixed inset-0 z-[100] mt-20 flex items-center justify-center p-4 sm:p-6 animate-in fade-in duration-300"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.9)" }}
           onClick={handleClose}
         >
