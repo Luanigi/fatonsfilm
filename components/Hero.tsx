@@ -110,7 +110,7 @@ export default function Hero() {
               className="text-sm sm:text-base md:text-xl flex items-center justify-center md:justify-start gap-2 mb-4 mt-[120px]"
               data-aos="zoom-in"
             >
-              <CiPlay1 className="text-lg sm:mt-1 text-center" />
+              <CiPlay1 className="text-lg text-center" />
               <p className="tracking-wider uppercase">DIRECTED BY FATON CAKAJ</p>
             </div>
             <h3
@@ -166,12 +166,12 @@ export default function Hero() {
       {/* Expanded Modal Overlay */}
       {isExpanded && (
         <div
-          className="fixed inset-0 z-[100] mt-20 flex items-center justify-center p-4 sm:p-6 animate-in fade-in duration-300"
+          className="fixed inset-0 z-[100] pt-[5.5rem] flex items-center justify-center p-4 sm:p-6 animate-in fade-in duration-300"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.9)" }}
           onClick={handleClose}
         >
           <div
-            className="relative flex flex-col w-full max-w-6xl max-h-[calc(100vh-2rem)] sm:max-h-[calc(100vh-3rem)] overflow-hidden backdrop-blur bg-black/80 rounded-2xl sm:rounded-3xl shadow-2xl animate-in zoom-in-95 duration-300"
+            className="relative flex flex-col w-1/2 max-w-6xl max-h-[calc(100vh-2rem)] sm:max-h-[calc(100vh-3rem)] overflow-hidden backdrop-blur bg-black/80 rounded-2xl sm:rounded-3xl shadow-2xl animate-in zoom-in-95 duration-300"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header with Close Button */}
@@ -192,8 +192,8 @@ export default function Hero() {
             </div>
 
             {/* Scrollable Content */}
-            <div className="flex-1 overflow-y-auto custom-scroll px-6 sm:px-8 py-6">
-              {/* Video Gallery Grid */}
+            {/* <div className="flex-1 overflow-y-auto custom-scroll px-6 sm:px-8 py-6">
+              {/* Video Gallery Grid 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {movies.map((movie) => (
                   <div
@@ -226,7 +226,7 @@ export default function Hero() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> 
 
             <Dialog open={selectedMovie !== null} onOpenChange={() => setSelectedMovie(null)}>
               <DialogContent className="bg-black/90 backdrop-blur-lg text-white border-white/20 sm:max-w-[90vw] md:max-w-[800px] w-[95vw] rounded-2xl p-4 sm:p-6 z-[999999]">
@@ -247,7 +247,9 @@ export default function Hero() {
                   </div>
                 </div>
               </DialogContent>
-            </Dialog>
+            </Dialog> */}
+
+            <h1 className="text-4xl text-center my-20 font-bold">🚧🚧 IN BEARBEITUNG... 🚧🚧</h1>
           </div>
         </div>
       )}
