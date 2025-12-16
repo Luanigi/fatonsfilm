@@ -74,7 +74,7 @@ export default function NavLinks() {
         ))}
       </motion.ul>
 
-      <motion.hr variants={itemVariants} className="w-1/2 mx-auto" />
+      <motion.hr variants={itemVariants} className="w-1/2 mx-auto bg-neutral-500/70 h-1 rounded-lg" />
 
       <motion.div
         transition={{ type: "spring" }}

@@ -140,7 +140,7 @@ export default function Hero() {
                 <button
                   id="hero-btn"
                   onClick={handleExpand}
-                  className="flex items-center justify-center md:justify-between md:ml-auto text-white backdrop-blur bg-black/50 hover:bg-white/10 border-2 border-white px-4 py-2.5 w-auto m-auto sm:m-0 sm:w-auto md:w-auto rounded-lg mt-4 hover:-translate-y-1 transition-transform duration-200"
+                  className="flex items-center justify-center md:justify-between md:ml-auto text-white backdrop-blur bg-black/50 hover:bg-white/10 border-2 border-white px-4 py-2.5 w-auto m-auto sm:m-0 sm:w-auto md:w-auto rounded-lg mt-4 md:mt-5 hover:-translate-y-1 transition-transform duration-200"
                 >
                   <p className="md:ml-3 text-sm sm:text-base">Meine Projekte</p>
                   <div className="pl-2">
