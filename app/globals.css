@@ -62,8 +62,8 @@ body {
 }
 
 #impressum {
-  /* background: linear-gradient(transparent, #000b21), url("/bck.jpg"); */
-  background: #000;
+  background: linear-gradient(transparent, #000b21), url("/bck.jpg");
+  /* background: #000; */
 }
 
 #about {

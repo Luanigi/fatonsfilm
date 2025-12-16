@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { FaArrowAltCircleRight } from "react-icons/fa"
 import { CiPlay1 } from "react-icons/ci"
 import { X } from "lucide-react"
@@ -9,6 +9,7 @@ import Image from "next/image"
 import { Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
+import { useProjects } from "@/contexts/ProjectsContext"
 
 interface Kunden {
   id: number
@@ -25,7 +26,7 @@ interface Movie {
 }
 
 export default function Hero() {
-  const [isExpanded, setIsExpanded] = useState(false)
+  const { isExpanded, handleExpand, handleClose } = useProjects()
   const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null)
 
   const movies: Movie[] = [
@@ -96,22 +97,6 @@ export default function Hero() {
     { id: 20, img: "/kunden/kunde20.jpg", name: "m stage tanzart" },
   ]
 
-  const handleExpand = (e: React.MouseEvent) => {
-    e.preventDefault()
-    setIsExpanded(true)
-  }
-
-  const handleClose = () => {
-    setIsExpanded(false)
-  }
-
-  useEffect(() => {
-    if (isExpanded) {
-      document.body.style.overflow = "hidden"
-    } else {
-      document.body.style.overflow = "unset"
-    }
-  }, [isExpanded])
 
   return (
     <>
@@ -244,7 +229,7 @@ export default function Hero() {
             </div>
 
             <Dialog open={selectedMovie !== null} onOpenChange={() => setSelectedMovie(null)}>
-              <DialogContent className="bg-black/90 backdrop-blur-lg text-white border-white/20 sm:max-w-[90vw] md:max-w-[800px] w-[95vw] rounded-2xl p-4 sm:p-6">
+              <DialogContent className="bg-black/90 backdrop-blur-lg text-white border-white/20 sm:max-w-[90vw] md:max-w-[800px] w-[95vw] rounded-2xl p-4 sm:p-6 z-[999999]">
                 <DialogHeader className="mb-4">
                   <DialogTitle className="text-xl sm:text-2xl">{selectedMovie?.title}</DialogTitle>
                   <DialogDescription className="text-white/70 text-sm sm:text-base">{selectedMovie?.category}</DialogDescription>

@@ -9,11 +9,13 @@ import { FaInstagram, FaFacebookF  } from "react-icons/fa6";
 import { FiPhoneCall } from "react-icons/fi";
 import { LuMailPlus } from "react-icons/lu";
 import NavLinks from './NavLinks'
+import { useProjects } from '@/contexts/ProjectsContext'
 
 
 export default function Header() {
     const [isHovered, setIsHovered] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
+    const { handleExpand } = useProjects();
 
     const handleMouseEnter = () => {
         setIsHovered(true);
@@ -45,13 +47,13 @@ export default function Header() {
             <Image className="mr-3 rounded-md ml-3 mb-4" src={"/Logo.png"} width={40} height={30} alt={" "}/>
             Faton&apos;s Film
         </h5>
-          <Link href="/#home">
+          <Link href="/">
             <p className="py-2 px-4 hover:bg-white/20 transition duration-20">Home</p>
           </Link>
-          <Link href="/#about">
+          <Link href="/impressum">
             <p className="py-2 px-4 hover:bg-white/20 transition duration-20">Über mich</p>
           </Link>
-          <Link href="/#projekte">
+          <Link href="/#projekte" onClick={handleExpand}>
             <p className="py-2 px-4 hover:bg-white/20 transition duration-20">Projekte</p>
           </Link>
           <Link href="/#contact">

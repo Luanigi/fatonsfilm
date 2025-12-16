@@ -1,13 +1,16 @@
+"use client"
+
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { FaInstagram, FaFacebookF} from "react-icons/fa6";
 import { MailPlus, PhoneCall } from "lucide-react"
+import { useProjects } from '@/contexts/ProjectsContext'
 
 const links = [
-  { name: 'home', href: '/' },
-  { name: 'about', href: '/#about' },
-  { name: 'portfolio', href: '/#projekte' },
-  { name: 'contact', href: '/#contact' },
+  { name: 'Home', href: '/' },
+  { name: 'Über mich', href: '/impressum' },
+  { name: 'Projekte', href: '/#projekte' },
+  { name: 'Kontakt', href: '/#contact' },
 ]
 
 const socialLinks = [
@@ -52,6 +55,8 @@ const itemVariants = {
 }
 
 export default function NavLinks() {
+  const { handleExpand } = useProjects()
+  
   return (
     <motion.div
       variants={containerVariants}
@@ -66,6 +71,7 @@ export default function NavLinks() {
           <motion.li key={link.name} variants={itemVariants}>
             <a
               href={link.href}
+              onClick={link.name === 'Projekte' ? handleExpand : undefined}
               className="text-white hover:text-neutral-200 transition duration-300 text-lg block"
             >
               {link.name.charAt(0).toUpperCase() + link.name.slice(1).toLowerCase()}
