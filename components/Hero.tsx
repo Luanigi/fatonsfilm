@@ -171,7 +171,7 @@ export default function Hero() {
           onClick={handleClose}
         >
           <div
-            className="relative flex flex-col w-1/2 max-w-6xl max-h-[calc(100vh-2rem)] sm:max-h-[calc(100vh-3rem)] overflow-hidden backdrop-blur bg-black/80 rounded-2xl sm:rounded-3xl shadow-2xl animate-in zoom-in-95 duration-300"
+            className="relative flex flex-col md:w-1/2 max-w-6xl max-h-[calc(100vh-2rem)] sm:max-h-[calc(100vh-3rem)] overflow-hidden backdrop-blur bg-black/80 rounded-2xl sm:rounded-3xl shadow-2xl animate-in zoom-in-95 duration-300"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header with Close Button */}
@@ -249,7 +249,7 @@ export default function Hero() {
               </DialogContent>
             </Dialog> */}
 
-            <h1 className="text-4xl text-center my-20 font-bold">🚧🚧 IN BEARBEITUNG... 🚧🚧</h1>
+            <h1 className="text-xl md:text-4xl text-center my-20 font-bold">🚧🚧 IN BEARBEITUNG... 🚧🚧</h1>
           </div>
         </div>
       )}
