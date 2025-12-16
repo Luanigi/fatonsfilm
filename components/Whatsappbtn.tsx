@@ -17,7 +17,7 @@ export default function PhotoModal() {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <div className="hover:text-white cursor-pointer transition-colors py-2 px-4 flex w-3/6 bg-transparent border-white border-2 rounded">
+        <div className="hover:text-white cursor-pointer transition-colors py-2 px-4 flex sm:w-3/6 w-full bg-transparent border-white border-2 rounded">
                 <FaWhatsapp className="h-5 w-5" />
                 <span className="ml-auto">Whatsapp</span>
         </div>

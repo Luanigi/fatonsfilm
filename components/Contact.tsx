@@ -51,24 +51,25 @@ export default function Footer() {
           <div>
             <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Bleib im Kontakt!</h3>
             <div className="grid space-y-2 sm:space-y-3 mt-4">
-              <div className="flex flex-col sm:flex-row gap-2">
-                <Link href="mailto:post@fatonsfilmproduction.de" className="md:w-[280px] w-[100px] hover:text-white hover:bg-white/10 flex items-center justify-center sm:justify-start transition-colors py-2 px-4 border border-white/50 rounded text-xs sm:text-sm">
+              <div className="flex flex-row sm:flex-row gap-2 w-full sm:w-[500px]">
+                <Link href="mailto:post@fatonsfilmproduction.de" className=" w-full sm:w-[44%] hover:text-white hover:bg-white/10 flex items-center justify-center sm:justify-start transition-colors py-2 px-4 border-white border-2 rounded">
                   <MailPlus className="h-4 w-4 sm:h-5 sm:w-5 mr-2"/>
                   <span>Mail</span>
                 </Link>
-                  <Link href="tel:+4923313422243" className="md:w-[280px] w-[100px] hover:text-white hover:bg-white/10 flex items-center justify-center sm:justify-start transition-colors py-2 px-4 border border-white/50 rounded text-xs sm:text-sm">
+                  <Link href="tel:+4923313422243" 
+                    className="w-full sm:w-auto hover:text-white hover:bg-white/10 flex items-center justify-center sm:justify-start transition-colors py-2 px-4 border-white border-2 rounded text-xs sm:text-sm">
                   <PhoneCall className="h-4 w-4 sm:h-5 sm:w-5 mr-2"/>
                   <span className="truncate">Mobil Nummer</span>
                 </Link>
               </div>
 
-              <Link href="https://www.instagram.com/faton.ca/" target="_blank" className="w-[390px] hover:text-white hover:bg-white/10 transition-colors py-2 px-4 flex items-center justify-center sm:justify-start border border-white/50 rounded text-xs sm:text-sm">
+              <Link href="https://www.instagram.com/faton.ca/" target="_blank" className="sm:w-[390px] w-full hover:text-white hover:bg-white/10 transition-colors py-2 px-4 flex items-center justify-center sm:justify-start border-white border-2 rounded">
                 <Instagram className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
                 <span>Instagram</span>
               </Link>
 
-              <div className="flex flex-col sm:flex-row gap-4 w-[500px]">
-                <Link href="https://www.facebook.com/p/fatonca-100066291680163/" target="_blank" className="hover:text-white hover:bg-white/10 transition-colors py-2 px-4 flex items-center justify-center sm:justify-start border border-white/50 rounded text-xs sm:text-sm">
+              <div className="flex flex-row sm:flex-row gap-2 w-full sm:w-[500px]">
+                <Link href="https://www.facebook.com/p/fatonca-100066291680163/" target="_blank" className="hover:text-white hover:bg-white/10 transition-colors py-2 px-4 flex items-center justify-center sm:justify-start border-white border-2 rounded w-[300px] sm:w-auto">
                   <Facebook className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
                   <span>Facebook</span>
                 </Link>

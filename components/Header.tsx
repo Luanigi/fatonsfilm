@@ -57,7 +57,7 @@ export default function Header() {
           <Link href="/#contact">
             <p className="py-2 px-4 hover:bg-white/20 transition duration-20">Kontakt</p>
           </Link>
-          <hr className='w-1/2 text-center mx-auto my-3'/>
+          <hr className='w-1/2 text-center mx-auto my-3 text-white'/>
           <div className="grid grid-cols-4 mx-auto mt-3">
             <Link href="https://www.instagram.com/faton.ca/" target="_blank" className="font-bold flex">
               <FaInstagram className="text-5xl py-2 text-[#849cc8]  hover:bg-white/20 transition duration-20 ease-in-out rounded-md" />            
