@@ -97,11 +97,12 @@ export default function Home() {
       <Header />
       <main className="bg-black">
         <Hero />
-        <Zitat />
-        <About />
+        {/* <Zitat /> */}
+        {/* <About /> */}
         <Dienstleistungen />
-        <Portfolio />
-        <Kunden />
+        
+        {/* <Portfolio /> */}
+        {/* <Kunden /> */}
         <Bewertungen/>
         <Contact />
         <ScrollToTop />

@@ -1,10 +1,7 @@
-"use client";
+"use client"
 
-import BewertungsKarte from "./BewertungsKarte"
-import { Autoplay } from "swiper/modules"
-import {Swiper, SwiperSlide} from "swiper/react"
-import "swiper/css"
-import "swiper/css/autoplay"
+import { Card, CardContent } from "@/components/ui/card"
+import { Quote } from "lucide-react"
 
 const testimonials = [
   {
@@ -26,7 +23,7 @@ const testimonials = [
     name: "Ali B.",
     review:
       "Ein absoluter Profi, der jeden Moment perfekt einfängt. Ich bin jedes Mal begeistert von den Ergebnissen. Freundlich und sehr kompetent!",
-  },  
+  },
   {
     name: "Nino G.",
     review:
@@ -59,52 +56,65 @@ const testimonials = [
   },
   {
     name: "Maximilian E.",
-    review:
-      "Er versteht es, Emotionen durch seine Filme zu transportieren. Ein wahrer Meister seines Fachs!",
+    review: "Er versteht es, Emotionen durch seine Filme zu transportieren. Ein wahrer Meister seines Fachs!",
   },
   {
     name: "Jonas F.",
     review:
       "Seine Filme sind visuell beeindruckend und emotional packend. Man merkt, dass er ein wahres Gespür für die richtige Inszenierung hat.",
   },
-];
+]
 
-function Testimonials() {
+export default function Testimonials() {
   return (
-    <div id="testimonial" className="w-full h-fit py-20 relative bg-cover bg-center">
+    <section id="testimonial" className="w-full py-20 lg:py-32 bg-background">
       <div className="max-w-[1400px] w-[91%] mx-auto">
-        <div className="text-center justify-center">
-          <div className="text-[#1c4c74] px-2 text-xl font-extrabold uppercase rounded-md mb-5" data-aos="fade-up-left">
+        {/* Header */}
+        <div className="text-center mb-16 space-y-4">
+          <div
+            className="inline-block text-muted-foreground text-sm font-semibold uppercase tracking-wider mb-2"
+            data-aos="fade-in"
+          >
             Bewertungen
           </div>
-          <h3 className="text-white text-[50px] mb-10" data-aos="fade-in">Was sagen unsere Kunden?</h3>
+          <h2
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground"
+            data-aos="fade-in"
+            data-aos-delay="100"
+          >
+            Was sagen unsere Kunden?
+          </h2>
         </div>
-        <Swiper
-          modules={[Autoplay]}
-          autoplay={{ delay: 5000 }}
-          speed={500}
-          spaceBetween={20}
-          slidesPerView={1}
-          breakpoints={{
-            770: {
-              slidesPerView: 2,
-            },
-            1024: {
-              slidesPerView: 3,
-            },
-          }}
-          className="w-full "
-          data-aos="fade-in"
-        >
+
+        {/* Testimonials Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-in" data-aos-delay="200">
           {testimonials.map((testimonial, index) => (
-            <SwiperSlide key={index}>
-              <BewertungsKarte testimonial={testimonial}/>
-            </SwiperSlide>
+            <Card
+              key={index}
+              className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-border/50 bg-card/50 backdrop-blur-sm"
+              style={{
+                animationDelay: `${index * 50}ms`,
+              }}
+            >
+              <CardContent className="pt-6 space-y-4">
+                {/* Quote Icon */}
+                <div className="text-muted-foreground/20 group-hover:text-muted-foreground/40 transition-colors duration-300">
+                  <Quote className="w-8 h-8" />
+                </div>
+
+                {/* Review Text */}
+                <p className="text-foreground/90 leading-relaxed text-sm md:text-base">{testimonial.review}</p>
+
+                {/* Divider */}
+                <div className="w-12 h-px bg-border group-hover:bg-foreground/20 transition-colors duration-300" />
+
+                {/* Name */}
+                <p className="text-foreground font-semibold tracking-wide">{testimonial.name}</p>
+              </CardContent>
+            </Card>
           ))}
-        </Swiper>
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
-
-export default Testimonials
