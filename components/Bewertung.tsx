@@ -67,18 +67,18 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonial" className="w-full py-20 lg:py-32 bg-background">
-      <div className="max-w-[1400px] w-[91%] mx-auto">
+    <section id="testimonial" className="w-full py-12 md:py-16 lg:py-24 bg-background">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16 space-y-4">
+        <div className="text-center mb-12 md:mb-16 space-y-3 sm:space-y-4">
           <div
-            className="inline-block text-muted-foreground text-sm font-semibold uppercase tracking-wider mb-2"
+            className="inline-block text-muted-foreground text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2"
             data-aos="fade-in"
           >
             Bewertungen
           </div>
           <h2
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-12 md:mb-16 lg:mb-20 tracking-wider"
             data-aos="fade-in"
             data-aos-delay="100"
           >
@@ -87,7 +87,7 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-in" data-aos-delay="200">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6" data-aos="fade-in" data-aos-delay="200">
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}

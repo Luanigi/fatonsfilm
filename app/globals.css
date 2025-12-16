@@ -11,15 +11,18 @@ body {
   @apply max-w-[100vw] overflow-x-hidden bg-black;
 }
 
-#home{
-  background: linear-gradient(rgba(0,0,0,0.5),#000000),url("/bg.gif");
-  background-size: cover, cover;
+#home {
+  background: linear-gradient(rgba(0,0,0,0.5),#000000), url("/bg.gif");
+  background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  height: 100dvh;
-  display: grid;
-  z-index: -99;
+  /* background-attachment: fixed; */
 }
+
+/* @media (min-width: 768px) {
+  #home {
+    background-attachment: fixed;
+  }
+} */
 
 .marq {
   background: linear-gradient(transparent 10%, rgba(0,0,0,0.2) 20%,#000000 70%);
@@ -27,9 +30,17 @@ body {
 }
 
 #testimonial {
-  background: linear-gradient(#000, rgba(0,0,0,0.9), rgb(0, 11, 33)),url("/bewertung.png");
+  /* background: linear-gradient(#000, rgba(0,0,0,0.9), rgb(0, 11, 33)),url("/bewertung.png"); */
+  background: #000;
   background-size: cover;
   background-position: center;
+  background-attachment: scroll;
+}
+
+@media (min-width: 768px) {
+  #testimonial {
+    background-attachment: fixed;
+  }
 }
 
 /* #kunden {
@@ -38,52 +49,51 @@ body {
 } */
 
 #prjktBck {
-  background: linear-gradient(#000, rgba(0,0,0,0.9), #000),url("/bck.jpg"); /*,url("/prjktbck.png")*/
+  /* background: linear-gradient(#000, rgba(0,0,0,0.9), #000),url("/bck.jpg"); ,url("/prjktbck.png") */
+  background: #000;
   background-position: center;
 }
 
 #not-found {
-  background: linear-gradient(rgba(0,0,0,0.5),#000000),url("/bg.gif");
+  /* background: linear-gradient(rgba(0,0,0,0.5),#000000),url("/bg.gif"); */
+  background: #000;
   background-size: cover;
   background-position: center;
 }
 
 #impressum {
-  background: linear-gradient(transparent, #000b21), url("/bck.jpg");
+  /* background: linear-gradient(transparent, #000b21), url("/bck.jpg"); */
+  background: #000;
 }
 
 #about {
-  background: linear-gradient(#000b21, rgba(0,0,0,0.5), #000b21),url("/bck.jpg");
+  /*  background: linear-gradient(#000b21, rgba(0,0,0,0.5), #000b21),url("/bck.jpg"); */
+  background: #000;
   background-position: center;
   text-shadow: 1px 1px 2px #000b21;
 }
 
 .bewertungbg {
-  background: rgba(0, 11, 33, 0.5);
-}
-
-@media only screen and (max-width: 766px) {
-  #hero-btn {
-    @apply m-auto;
-  }
+  /* background: rgba(0, 11, 33, 0.5);
+   */
+  background: #000;	
 }
 
 .dienstbg{
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(0,11,33,1) 50%, rgba(0,0,0,1) 85%);
+  /* background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(0,11,33,1) 50%, rgba(0,0,0,1) 85%); */
+  background: #000;
 }
 
 .ss {
-  background: rgb(132,156,200);
-  background: linear-gradient(90deg, rgba(132,156,200,1) 31%, rgba(212,187,71,1) 66%, rgba(216,116,116,1) 100%);  opacity: 90%;
+  /* background: rgb(132,156,200);
+  background: linear-gradient(90deg, rgba(132,156,200,1) 31%, rgba(212,187,71,1) 66%, rgba(216,116,116,1) 100%);  opacity: 90%; */
+
+  background: #000;
 } 
 
 .zitat {
   background: linear-gradient( rgba(0,0, 0, 0.9),#000b21);
-}
-
-Images {
-  z-index: 20;
 }
 
 
@@ -150,12 +160,12 @@ Images {
 }
 
 .custom-scroll::-webkit-scrollbar-track {
-  background: #0006c2;      /* Tailwind gray-200 */
+  background: #000;      /* Tailwind gray-200 */
   border-radius: 9999px;
 }
 
 .custom-scroll::-webkit-scrollbar-thumb {
-  background: #0056cf;      /* Tailwind blue-500 */
+  background: #c8c8c8;      /* Tailwind blue-500 */
   border-radius: 9999px;
 }
 

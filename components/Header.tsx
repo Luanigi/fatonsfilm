@@ -96,7 +96,7 @@ export default function Header() {
 
 
       {/* Responsive Navbar for iPad or Smaller */}
-      <nav className="w-full h-[65px] absolute top-0 left-0 right-0 z-50 lg:hidden" data-aos="fade-down">
+      <nav className="w-full h-[65px] fixed top-0 left-0 right-0 z-[60] lg:hidden" data-aos="fade-down">
       <div className="backdrop-blur-md bg-black/20 p-4 shadow-lg">
         <div className="flex justify-between items-center">
         <h5 className="text-3xl font-bold flex text-white">
